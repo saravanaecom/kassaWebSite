@@ -128,75 +128,162 @@ export const FEATURES = [
   },
 ];
 
+// export const TESTIMONIALS = [
+//   {
+//     name: "ABU MALIGAI STORES",
+//     role: "Owner",
+//     business: "ABU MALIGAI STORES",
+//     city: "",
+//     rating: 5,
+//     quote:
+//       "We think this is the best billing software we have ever used. It's incredibly easy to learn and use, making billing simple for our staff from day one. Creating invoices, tracking payments, and generating reports is quick and efficient. What truly stands out is the customer support. Whenever we report an issue or bug, the KassaPOS team responds immediately and resolves it without delay. Their fast service and reliable support make KassaPOS a billing solution we can confidently depend on every day.",
+//     industry: "Supermarket",
+//   },
+//   {
+//     name: "Rajesh Kumar",
+//     role: "Owner",
+//     business: "RK Mobile Store",
+//     city: "Madurai",
+//     rating: 5,
+//     // photo: "/review/3.avif",
+//     quote:
+//       "Bought the software in 2019 and it's still working perfectly. Support team is always available. 5 years strong!",
+//     industry: "Mobile Shop",
+//   },
+//   {
+//     name: "Rekha Krishna Kumar",
+//     role: "Director",
+//     business: "Sriram Associates",
+//     city: "Pondicherry",
+//     rating: 5,
+//     //photo: "/review/2.webp",
+//     quote:
+//       "Very user-friendly software that covers all my requirements. Quick response from the company whenever I needed help. Highly recommended.",
+//     industry: "Wholesale",
+//   },
+//   {
+//     name: "Arjun Sharma",
+//     role: "Owner",
+//     business: "Fresh Mart Supermarket",
+//     city: "Coimbatore",
+//     rating: 5,
+//    // photo: "/review/4.avif",
+//     quote:
+//       "The WhatsApp billing feature is a game-changer. My customers love getting instant digital receipts. Revenue is up 25% since switching.",
+//     industry: "Supermarket",
+//   },
+//   {
+//     name: "Priya Ramasamy",
+//     role: "Manager",
+//     business: "Priya Textile House",
+//     city: "Sivakasi",
+//     rating: 5,
+//     //photo: "/review/2.webp",
+//     quote:
+//       "Handles our complex textile billing — sizes, colors, batches — perfectly. Cloud sync means I can check sales from home at midnight.",
+//     industry: "Textile",
+//   },
+//   {
+//     name: "Muthu Selvan",
+//     role: "Owner",
+//     business: "Selvan Restaurant",
+//     city: "Trichy",
+//     rating: 5,
+//     //photo: "/review/1.webp",
+//     quote:
+//       "KOT management and table billing made our service 3x faster during peak hours. The Swiggy integration saves hours of manual entry daily.",
+//     industry: "Restaurant",
+//   },
+// ];
+
 export const TESTIMONIALS = [
   {
-    name: "Deepak Dennison",
-    role: "Owner",
-    business: "Deepak Grocery Shop",
-    city: "Chennai",
+    name: "ABU MALIGAI STORES",
     rating: 5,
-    photo: "/review/1.webp",
-    quote:
-      "Very good support by Ram Kumar. Ideal software for small and medium scale businesses. Switched from manual billing 2 years ago and never looked back.",
-    industry: "Supermarket",
+    industry: "Grocery Store",
+    city: "",
+    quote: "We think this is the best billing program we have ever used. It is super easy for anyone to learn and use, which made things much simpler for our staff right away. We can make and send invoices, track payments, and get reports very quickly it just works well. But the main reason we love it is the customer service team. They are fantastic. If we ever find a problem or a bug, their team jumps on it and fixes it immediately. We don't have to wait around for days; they get the job done fast. This quick help and great support make kassapos a tool we can totally rely on every single day for our business.",
+    reviewUrl: "https://share.google/XrGkr0x3UHyhRHM1p",
   },
-  {
-    name: "Rajesh Kumar",
-    role: "Owner",
-    business: "RK Mobile Store",
-    city: "Madurai",
-    rating: 5,
-    photo: "/review/3.avif",
-    quote:
-      "Bought the software in 2019 and it's still working perfectly. Support team is always available. 5 years strong!",
-    industry: "Mobile Shop",
-  },
-  {
-    name: "Rekha Krishna Kumar",
-    role: "Director",
-    business: "Sriram Associates",
-    city: "Pondicherry",
-    rating: 5,
-    photo: "/review/2.webp",
-    quote:
-      "Very user-friendly software that covers all my requirements. Quick response from the company whenever I needed help. Highly recommended.",
-    industry: "Wholesale",
-  },
-  {
-    name: "Arjun Sharma",
-    role: "Owner",
-    business: "Fresh Mart Supermarket",
-    city: "Coimbatore",
-    rating: 5,
-    photo: "/review/4.avif",
-    quote:
-      "The WhatsApp billing feature is a game-changer. My customers love getting instant digital receipts. Revenue is up 25% since switching.",
-    industry: "Supermarket",
-  },
-  {
-    name: "Priya Ramasamy",
-    role: "Manager",
-    business: "Priya Textile House",
-    city: "Sivakasi",
-    rating: 5,
-    photo: "/review/2.webp",
-    quote:
-      "Handles our complex textile billing — sizes, colors, batches — perfectly. Cloud sync means I can check sales from home at midnight.",
-    industry: "Textile",
-  },
-  {
-    name: "Muthu Selvan",
-    role: "Owner",
-    business: "Selvan Restaurant",
-    city: "Trichy",
-    rating: 5,
-    photo: "/review/1.webp",
-    quote:
-      "KOT management and table billing made our service 3x faster during peak hours. The Swiggy integration saves hours of manual entry daily.",
-    industry: "Restaurant",
-  },
-];
 
+  {
+    name: "AA GENERAL STORES",
+    rating: 5,
+    industry: "General Store",
+    city: "",
+    quote: "Excellent service. User friendly software. After sales service excellent. Anytime you call them for any doubts they give you immediate response and the staff there are very courteous and cordial. Special mention about the owner ---she was very good and made me feel comfortable and extended all support right from purchase of the software , installation and giving training etc.........Thank you Mam.",
+    reviewUrl: "https://share.google/Cqzo1rtduYNXmkDTg",
+  },
+  {
+    name: "AISHWARYAM MALIGAI",
+    rating: 5,
+    industry: "Supermarket",
+    city: "",
+    quote: "Kassapos is a very good and easy-to-use app for supermarkets. The features are simple, smooth, and make daily billing work much easier. Their customer service is excellent — they respond quickly and resolve problems immediately. A special thanks to Mr. Gokul for his great support he helped me solve my issue very fast. Highly recommended",
+    reviewUrl: "https://share.google/cxaKCZm3UD9raMTEe",
+  },
+  {
+    name: "NALAM ORGANIC",
+    rating: 5,
+    industry: "Organic Store",
+    city: "",
+    quote: "I bought billing software last week from Kassapos Billing Software. Using the software is very easy and user-friendly.According to our requirements, they also add extra features to the software. Very excellent customer service. Issues and problem resolving through remote desk is very good and save so much time. . One of the Best billing software companies in Chennai. The price for the software is very reasonable",
+    reviewUrl: "https://share.google/ne9eNRrddCdDgKqNl",
+  },
+  {
+    name: "BIG SAVE SUPERSTORE",
+    rating: 5,
+    industry: "Supermarket",
+    city: "",
+    quote: "Kassapos is a very good and easy-to-use app for supermarkets. The features are simple, smooth, and make daily billing work much easier. Their customer service is excellent — they respond quickly and resolve problems immediately. A special thanks to Mr. Gokul for his great support he helped me solve my issue very fast. Highly recommended",
+    reviewUrl: "https://share.google/opcx8mONyeKyVWYAP",
+  },
+  {
+    name: "ORANGE FEMALE CHOICE",
+    rating: 5,
+    industry: "Ladies Fashion Store",
+    city: "",
+    quote: "I am very happy to use this software. Worth buying this software. Support is excellent. You will get instant support from support team, supporting persons also very kind and polite and price also reasonable. Thank you Kassapos!!Before that I used one worst software(koka technology pvt ltd) no support, worst developer ever,software not works well. Now am happy with you kassapos! Thank you again!!!",
+    reviewUrl: "https://share.google/8WgJPN7CtSUkCobUm",
+  },
+
+  {
+    name: "ZAKIR STORES",
+    rating: 5,
+    industry: "Supermarket",
+    city: "",
+    quote: "This software is very helpful and user friendly the features are simple to understand and the performance is smooth it saves a lot of time 👍 good job to the customer service 👍👍",
+    reviewUrl: "https://share.google/1mcQG1J2rNcPU8vNa",
+  },
+  {
+    name: "SHIVSANG BOUTIQUE & TEXTILES",
+    rating: 5,
+    industry: "Boutique & Textiles",
+    city: "",
+    quote: "Very glad to purchase the software. It fulfilled all requirements for my shop. User freindly software not more complicated.Apart from all, support team they were very polite and patience, they make us understand and comfortable with all our queries.Thanks and keep on going....",
+    reviewUrl: "https://share.google/4yNmBJVtle12f7clx",
+  },
+  {
+    name: "ANANDHA BRINTHA",
+    rating: 5,
+    industry: "Supermarket",
+    city: "",
+    quote: "Your software is very good, you have a lot of features...It is very user friendly...It's really nice to use the plus or minus symbol to increment the product quantity without using the mouse...The service and support is very great...Whenever I ask for support, they clear the issue immediately...Overall the experience was very very very very great... Thanks a lot KASSAPOS SOFTWARE SOLUTIONS PVT LTD",
+    reviewUrl: "https://share.google/6GWLjdwGuC6HYWIfY",
+  },
+
+  {
+    name: "RK ENTERPRISES",
+    rating: 5,
+    industry: "Family Store",
+    city: "",
+    quote: "I am using Kassapos Billing Softwar for last 1.5 years and it provides more than just creating Bills, like stock management, purchase management, GST Compliance, Cloud POS, much satisfied with customer support. Kavitha from Support team always give prompt response.. By RK Enterprises (Rithu Kumar The Family Shop)",
+    reviewUrl: "https://share.google/t492bNhg0W6OcKlRL",
+  },
+
+
+  
+];
 export const PRICING_PLANS = [
   {
     id: "Basic",
