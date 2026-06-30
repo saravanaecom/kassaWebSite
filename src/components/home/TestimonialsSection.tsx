@@ -11,60 +11,103 @@ const LOOPED = [...TESTIMONIALS, ...TESTIMONIALS];
 
 function TestimonialCard({ item }: { item: (typeof TESTIMONIALS)[0] }) {
   return (
-    <div
-      className="flex flex-row rounded-2xl overflow-hidden shrink-0"
-      style={{
-        width: 340,
-        minHeight: 210,
-        background: "#FFFFFF",
-        border: "1px solid #EBEBEB",
-        boxShadow: "0 2px 16px rgba(0,0,0,0.06)",
-        marginRight: 20,
-      }}
+    <a
+      href={item.reviewUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block shrink-0"
+      style={{ marginRight: 20, textDecoration: "none" }}
     >
-      {/* Photo */}
-      <div style={{ width: 120, flexShrink: 0, overflow: "hidden" }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={(item as any).photo || "/review/1.webp"}
-          alt={item.name}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "top center",
-            display: "block",
-          }}
-        />
-      </div>
+      <motion.div
+        whileHover={{
+          y: -8,
+          scale: 1.03,
+        }}
+        transition={{ duration: 0.25 }}
+        style={{
+          width: 360,
+          minHeight: 220,
+          background: "#fff",
+          borderRadius: 22,
+          border: "1px solid rgba(37,99,235,.12)",
+          padding: 24,
+          boxShadow: "0 12px 30px rgba(0,0,0,.08)",
+          cursor: "pointer",
+        }}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <div>
+            <h3
+              style={{
+                fontWeight: 700,
+                fontSize: 18,
+                color: "#111827",
+              }}
+            >
+              {item.name}
+            </h3>
 
-      {/* Content */}
-      <div className="flex flex-col justify-between p-4 flex-1 min-w-0">
-        <div>
-          <p className="font-bold text-slate-900 leading-tight mb-0.5" style={{ fontSize: "0.95rem" }}>
-            {item.name}
-          </p>
-          <p className="text-xs text-slate-400">{item.industry}, {item.city}</p>
-
-          {/* Stars */}
-          <div className="flex gap-0.5 mt-2">
-            {Array.from({ length: item.rating }).map((_, i) => (
-              <Star key={i} size={13} style={{ color: "#F59E0B", fill: "#F59E0B" }} />
-            ))}
+            <p
+              style={{
+                color: "#64748B",
+                fontSize: 14,
+                marginTop: 2,
+              }}
+            >
+              {item.industry}
+            </p>
           </div>
+
+          <img
+            src="/navbar/google.png"
+            alt="Google"
+            style={{
+              width: 32,
+              height: 32,
+            }}
+          />
+        </div>
+
+        {/* Stars */}
+        <div className="flex gap-1 mt-4">
+          {Array.from({ length: item.rating }).map((_, i) => (
+            <Star
+              key={i}
+              size={15}
+              style={{
+                color: "#F59E0B",
+                fill: "#F59E0B",
+              }}
+            />
+          ))}
         </div>
 
         {/* Quote */}
-        <div className="mt-2">
-          <span className="block font-extrabold leading-none mb-1" style={{ fontSize: "1.8rem", color: "#F59E0B", lineHeight: 0.9 }}>
-            &ldquo;
-          </span>
-          <p className="text-slate-600 line-clamp-3" style={{ fontSize: "0.8rem", lineHeight: 1.6 }}>
-            {item.quote}
-          </p>
+        <p
+          style={{
+            marginTop: 18,
+            color: "#475569",
+            lineHeight: 1.8,
+            fontSize: 14,
+          }}
+          className="line-clamp-5"
+        >
+          "{item.quote}"
+        </p>
+
+        <div
+          style={{
+            marginTop: 20,
+            color: "#2563EB",
+            fontWeight: 600,
+            fontSize: 14,
+          }}
+        >
+          Read on Google →
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </a>
   );
 }
 

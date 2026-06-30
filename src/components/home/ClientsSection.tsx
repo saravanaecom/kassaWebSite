@@ -3,20 +3,26 @@
 import { motion } from "framer-motion";
 
 const CLIENTS = [
-  { src: "/clients/brown.webp",        alt: "Brown" },
+  { src: "/clients/brown.webp", alt: "Brown" },
   { src: "/clients/green_mantra.webp", alt: "Green Mantra" },
-  { src: "/clients/knt.webp",          alt: "KNT" },
-  { src: "/clients/vaer.webp",         alt: "Vaer" },
+  { src: "/clients/knt.webp", alt: "KNT" },
+  { src: "/clients/vaer.webp", alt: "Vaer" },
 ];
 
-// duplicate enough times to fill a wide scroll
 const DOUBLED = [...CLIENTS, ...CLIENTS, ...CLIENTS, ...CLIENTS];
 
 export function ClientsSection() {
   return (
-    <section style={{ background: "linear-gradient(135deg, #EEF4FF 0%, #F0F9FF 50%, #E8F0FE 100%)", borderTop: "1px solid #DBEAFE", borderBottom: "1px solid #DBEAFE", overflow: "hidden", padding: "52px 0 56px" }}>
+    <section
+      style={{
+        background: "linear-gradient(135deg, #EEF4FF 0%, #F0F9FF 50%, #E8F0FE 100%)",
+        borderTop: "1px solid #DBEAFE",
+        borderBottom: "1px solid #DBEAFE",
+        overflow: "hidden",
+        padding: "56px 0 60px",
+      }}
+    >
       <div>
-
         {/* header */}
         <motion.div
           className="text-center"
@@ -51,69 +57,106 @@ export function ClientsSection() {
         </motion.div>
 
         {/* scrolling logo strip */}
-        <div style={{ position: "relative", overflow: "hidden" }}>
+        <div
+          className="logo-marquee"
+          style={{ position: "relative", overflow: "hidden" }}
+        >
           {/* left fade */}
           <div
             aria-hidden
             style={{
-              position: "absolute", left: 0, top: 0, bottom: 0,
-              width: 100,
-              background: "linear-gradient(to right, #FFFFFF, transparent)",
-              zIndex: 1, pointerEvents: "none",
+              position: "absolute",
+              left: 0,
+              top: 0,
+              bottom: 0,
+              width: 120,
+              background: "linear-gradient(to right, #EEF4FF, transparent)",
+              zIndex: 1,
+              pointerEvents: "none",
             }}
           />
           {/* right fade */}
           <div
             aria-hidden
             style={{
-              position: "absolute", right: 0, top: 0, bottom: 0,
-              width: 100,
-              background: "linear-gradient(to left, #FFFFFF, transparent)",
-              zIndex: 1, pointerEvents: "none",
+              position: "absolute",
+              right: 0,
+              top: 0,
+              bottom: 0,
+              width: 120,
+              background: "linear-gradient(to left, #E8F0FE, transparent)",
+              zIndex: 1,
+              pointerEvents: "none",
             }}
           />
 
           <motion.div
-            style={{ display: "flex", width: "max-content", alignItems: "center", gap: 48 }}
+            className="marquee-track"
+            style={{
+              display: "flex",
+              width: "max-content",
+              alignItems: "center",
+              gap: 28,
+            }}
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+            transition={{
+              duration: 26,
+              repeat: Infinity,
+              ease: "linear",
+            }}
           >
             {DOUBLED.map((client, i) => (
-              <div
-                key={i}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "14px 36px",
-                  background: "#FFFFFF",
-                  borderRadius: 18,
-                  border: "1px solid rgba(37,99,235,0.1)",
-                  boxShadow: "0 2px 12px rgba(37,99,235,0.07)",
-                  minWidth: 180,
-                  height: 96,
-                  flexShrink: 0,
-                }}
-              >
+              <div key={i} className="logo-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={client.src}
-                  alt={client.alt}
-                  style={{
-                    maxHeight: 62,
-                    maxWidth: 148,
-                    width: "auto",
-                    height: "auto",
-                    objectFit: "contain",
-                    filter: "grayscale(20%)",
-                    opacity: 0.9,
-                  }}
-                />
+                <img src={client.src} alt={client.alt} className="logo-img" />
               </div>
             ))}
           </motion.div>
         </div>
       </div>
+
+      <style jsx>{`
+        .marquee-track {
+          will-change: transform;
+        }
+        .logo-marquee:hover .marquee-track {
+          animation-play-state: paused;
+        }
+        .logo-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 22px 40px;
+          background: #ffffff;
+          border-radius: 20px;
+          border: 1px solid rgba(37, 99, 235, 0.08);
+          box-shadow: 0 4px 16px rgba(37, 99, 235, 0.06);
+          min-width: 220px;
+          height: 120px;
+          flex-shrink: 0;
+          transition: transform 0.25s ease, box-shadow 0.25s ease,
+            border-color 0.25s ease;
+        }
+        .logo-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 12px 28px rgba(37, 99, 235, 0.14);
+          border-color: rgba(37, 99, 235, 0.22);
+        }
+        .logo-img {
+          max-height: 76px;
+          max-width: 170px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          filter: grayscale(45%);
+          opacity: 0.82;
+          transition: filter 0.25s ease, opacity 0.25s ease;
+        }
+        .logo-card:hover .logo-img {
+          filter: grayscale(0%);
+          opacity: 1;
+        }
+      `}</style>
     </section>
   );
 }

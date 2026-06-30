@@ -162,7 +162,7 @@ export function HeroSection() {
           <div>
             {/* Badge */}
             <AnimatePresence mode="wait" initial={false}>
-              <motion.div
+              <motion.div 
                 key={`tag-${current}`}
                 variants={contentVariants}
                 initial="enter" animate="center" exit="exit"

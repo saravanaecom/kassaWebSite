@@ -11,7 +11,7 @@ import { EASE_EXPO } from "@/lib/animations";
 const VIDEO_TESTIMONIALS = [
   {
     videoId: "NrlQ7Z1sK-0",
-    name: "Rajesh Kumar",
+    name: "BIG SAVE SUPERSTORE",
     business: "SuperMart",
     industry: "Supermarket",
     city: "Chennai",
@@ -22,10 +22,10 @@ const VIDEO_TESTIMONIALS = [
   },
   {
     videoId: "4JklDpEk70s",
-    name: "Priya Lakshmi",
-    business: "Fashion World",
+    name: "SHIVSANG BOUTIQUE & TEXTILE",
+    business: "Boutique & Textiles",
     industry: "Textile",
-    city: "Coimbatore",
+    city: "Chennai",
     quote: "Managing 3 branches from one dashboard saved us hours every week.",
     stars: 5,
     avatarGradient: ["#7C3AED", "#8B5CF6"],
@@ -33,10 +33,10 @@ const VIDEO_TESTIMONIALS = [
   },
   {
     videoId: "gLeVYR36zrE",
-    name: "Suresh Rajan",
-    business: "Spice Garden",
-    industry: "Restaurant",
-    city: "Madurai",
+    name: "KANI VEGTABLES ",
+    business: "Vegetables",
+    industry: "Vegetables",
+    city: "Chennai",
     quote: "Fresh vegetables, faster billing, smarter business management.",
     stars: 5,
     avatarGradient: ["#059669", "#10B981"],
@@ -165,7 +165,7 @@ function VideoCard({
             </motion.div>
 
             {/* "Watch Story" label bottom left */}
-            <div
+            {/* <div
               style={{
                 position: "absolute",
                 bottom: 12,
@@ -185,10 +185,10 @@ function VideoCard({
               >
                 Watch Story
               </span>
-            </div>
+            </div> */}
 
             {/* Duration badge top right */}
-            <div
+            {/* <div
               style={{
                 position: "absolute",
                 top: 10,
@@ -203,7 +203,7 @@ function VideoCard({
               }}
             >
               2:30
-            </div>
+            </div> */}
           </button>
         )}
       </div>

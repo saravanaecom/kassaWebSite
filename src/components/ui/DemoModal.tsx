@@ -322,7 +322,7 @@ export function DemoModal() {
                       {/* Business Name */}
                       <div>
                         <label style={{ fontSize: "0.76rem", fontWeight: 600, color: "#374151", display: "block", marginBottom: 4 }}>
-                          Business Name *
+                          Your Requirement *
                         </label>
                         <input
                           required
