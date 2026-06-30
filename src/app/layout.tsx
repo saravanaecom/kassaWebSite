@@ -31,7 +31,7 @@ const monoFont = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kassapos.in"),
   title: {
-    default: "Kassapos — India's Most Powerful POS & Billing Software",
+   default: "Kassapos — Billing Software with Free Trail & Download | Retail Billing Software in Chennai | Billing Software in Chennai | POS Software in Chennai – Kassapos",
     template: "%s | Kassapos",
   },
   description:
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://kassapos.in",
     siteName: "Kassapos",
-    title: "Kassapos — India's Most Powerful POS & Billing Software",
+    title: "Kassapos — Billing Software il & Download | Retail Billing Software in Chennai | Billing Software in Chennai | POS Software in Chennai – Kassapos",
     description:
       "From corner shops to supermarket chains — Kassapos handles every bill, every product, every report. Instantly.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kassapos — India's Most Powerful POS & Billing Software",
-    description: "Trusted by 7,500+ businesses across South India since 2008.",
+    title: "Kassapos — Billing Software with Free Trail & Download | Retail Billing Software in Chennai | Billing Software in Chennai | POS Software in Chennai – Kassapos",
+    description: "Trusted by 10000+ businesses across South India since 2008.",
   },
   robots: {
     index: true,

@@ -136,7 +136,24 @@ export default function PricingPage() {
                   <p className={`text-sm ${plan.popular ? "text-brand-100/50" : "text-slate-500"}`}>{plan.tagline}</p>
                 </div>
 
-         
+                {/* Price */}
+                <div>
+                  {plan.custom ? (
+                    <div className={`text-3xl font-extrabold font-display ${plan.popular ? "text-white" : "text-slate-900"}`}>Custom</div>
+                  ) : (
+                    <div className="flex items-end gap-1.5">
+                      <span className={`text-4xl font-extrabold font-display ${plan.popular ? "text-white" : "text-slate-900"}`}>
+                        ₹{(annual ? plan.annualPrice : plan.monthlyPrice).toLocaleString("en-IN")}
+                      </span>
+                      <span className={`text-sm pb-1 ${plan.popular ? "text-brand-100/50" : "text-slate-500"}`}>/month</span>
+                    </div>
+                  )}
+                  {annual && !plan.custom && (
+                    <p className="text-xs text-emerald-600 mt-1">
+                      Save ₹{((plan.monthlyPrice - plan.annualPrice) * 12).toLocaleString("en-IN")}/year
+                    </p>
+                  )}
+                </div>
 
                 {/* Features */}
                 <ul className="flex flex-col gap-2.5 flex-1">
