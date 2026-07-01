@@ -42,7 +42,7 @@ const VIDEO_TESTIMONIALS: Testimonial[] = [
   },
   {
     reelUrl: "https://www.instagram.com/reel/DU7drPMjbJ6",
-    name: "KANI VEGETABLES",
+    name: "Tapovana Organic Farms",
     business: "Vegetables",
     industry: "Vegetables",
     city: "Pallavaram,Chennai",
