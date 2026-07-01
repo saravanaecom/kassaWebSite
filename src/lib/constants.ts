@@ -250,7 +250,7 @@ export const TESTIMONIALS = [
   {
     name: "ZAKIR STORES",
     rating: 5,
-    industry: "Supermarket",
+    industry: "Grocery Store",
     city: "",
     quote: "This software is very helpful and user friendly the features are simple to understand and the performance is smooth it saves a lot of time 👍 good job to the customer service 👍👍",
     reviewUrl: "https://share.google/1mcQG1J2rNcPU8vNa",

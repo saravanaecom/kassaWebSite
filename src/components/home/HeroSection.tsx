@@ -349,7 +349,7 @@ export function HeroSection() {
               ))}
 
               {/* Floating badge — top right: Google Rating */}
-              <div
+              {/* <div
                 style={{
                   position: "absolute",
                   top: 14,
@@ -370,7 +370,7 @@ export function HeroSection() {
                   <p style={{ fontSize: "0.78rem", fontWeight: 800, color: "#1E293B", lineHeight: 1.2, margin: 0 }}>4.9 Rated</p>
                   <p style={{ fontSize: "0.65rem", color: "#64748B", margin: 0 }}>Google Reviews</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Floating badge — bottom left: Happy Businesses */}
               <div

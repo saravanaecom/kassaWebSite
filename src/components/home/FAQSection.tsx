@@ -43,11 +43,11 @@ const FAQS = [
     answer:
       "Yes! Our team will help you import your existing products, customers, and supplier data from Excel, CSV, or your previous billing software. Data migration is free for all new customers.",
   },
-  {
-    question: "Does Kassapos integrate with Swiggy and Zomato?",
-    answer:
-      "Yes, Kassapos Pro plan includes direct integration with Swiggy and Zomato. Orders automatically sync to your POS, eliminating manual entry and reducing errors during peak hours.",
-  },
+  // {
+  //   question: "Does Kassapos integrate with Swiggy and Zomato?",
+  //   answer:
+  //     "Yes, Kassapos Pro plan includes direct integration with Swiggy and Zomato. Orders automatically sync to your POS, eliminating manual entry and reducing errors during peak hours.",
+  // },
   {
     question: "What hardware is compatible with Kassapos?",
     answer:
