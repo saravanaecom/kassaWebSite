@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SplashScreen } from "@/components/SplashScreen";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { Analytics } from "@vercel/analytics/next";
 
 const displayFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({
           <Footer />
           <WhatsAppFloat />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
