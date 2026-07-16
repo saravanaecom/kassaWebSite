@@ -31,11 +31,11 @@ const monoFont = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kassapos.in"),
   title: {
-   default: "Kassapos — Billing Software with Free Trail & Download | Retail Billing Software in Chennai | Billing Software in Chennai | POS Software in Chennai – Kassapos",
+   default: "Kassapos — Billing Software in Chennai | Retail Billing Software in Chennai | GST POS Software | KassaPOS",
     template: "%s | Kassapos",
   },
   description:
-    "Kassapos is India's leading POS and billing software for supermarkets, restaurants, retail shops, and more. Cloud-ready, GST compliant, 24/7 Tamil & English support. Trusted by 7,500+ businesses.",
+    "Looking for the best Billing Software in Chennai? KassaPOS provides GST billing, retail billing, barcode billing, inventory management, cloud and offline POS software for supermarkets, restaurants, pharmacies, textile stores and more. Book your free demo today.",
   keywords: [
     "billing software Chennai",
     "POS software India",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://kassapos.in",
     siteName: "Kassapos",
-    title: "Kassapos — Billing Software il & Download | Retail Billing Software in Chennai | Billing Software in Chennai | POS Software in Chennai – Kassapos",
+    title: "Kassapos — Billing Software in Chennai | Retail Billing Software in Chennai | GST POS Software | KassaPOS",
     description:
-      "From corner shops to supermarket chains — Kassapos handles every bill, every product, every report. Instantly.",
+      "Looking for the best Billing Software in Chennai? KassaPOS provides GST billing, retail billing, barcode billing, inventory management, cloud and offline POS software for supermarkets, restaurants, pharmacies, textile stores and more. Book your free demo today.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {

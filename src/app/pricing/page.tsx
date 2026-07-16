@@ -246,7 +246,7 @@ export default function PricingPage() {
         <div className="container-xl max-w-3xl">
           <ScrollReveal className="text-center mb-10">
             <h2 className="text-display-md font-bold font-display text-slate-900 mb-3">
-              Frequently asked questions
+            Frequently Asked Questions
             </h2>
             <p className="text-slate-500">
               Can&apos;t find what you&apos;re looking for?{" "}
