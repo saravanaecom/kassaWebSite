@@ -250,7 +250,7 @@ export function IndustrySection() {
             className="font-display font-bold text-slate-900 mb-4"
             style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.9rem)", lineHeight: 1.15 }}
           >
-            Tailored for your{" "}
+            Tailored for your {" "}
             <span className="gradient-text">specific business</span>
           </h2>
           <p className="text-base text-slate-500 max-w-lg mx-auto">

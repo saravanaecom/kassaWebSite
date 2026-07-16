@@ -74,7 +74,7 @@ export function SeeInActionSection() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`https://img.youtube.com/vi/${YOUTUBE_ID}/hqdefault.jpg`}
-                  alt="Play Kassapos Demo Video"
+                  alt="Retail Billing Software in Chennai"
                   loading="lazy"
                   style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }}
                 />
@@ -201,7 +201,7 @@ export function SeeInActionSection() {
           >
             <Image
               src="/demo.png"
-              alt="Kassapos Demo Screenshot"
+              alt="Inventory Management Software Chennai"
               width={520}
               height={360}
               loading="lazy"

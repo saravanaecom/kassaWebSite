@@ -54,21 +54,21 @@ const NAV_LINKS = [
 
 const MEGA_MENU = [
   { id: "retail",     label: "Retail Software",       
-   items: [{ label: "Supermarket Shop", href: "/products/supermarket", icon: "🏪" },
-    { label: "Grocery Shop", href: "/products/Grocery", icon: "🛒" ,},
-    { label: "Retail Shop", href: "/products/retail", icon: "🛍️" ,},
-    { label: "Vegetable & Fruits Shop", href: "/products/vegetables", icon: "🥬", },
-    { label: "Garments & Textiles Shop", href: "/products/textile", icon: "👗", },
-    { label: "Footwear Shop", href: "/products/footwear", icon: "👟", },
-    {label: "Mobile & Computer Shop", href: "/products/mobile",icon: "📱",},
+   items: [{ label: "Supermarket Shop", href: "/products/supermarket-billing-software", icon: "🏪" },
+    { label: "Grocery Shop", href: "/products/grocery-billing-software", icon: "🛒" ,},
+    { label: "Retail Shop", href: "/products/retail-billing-software", icon: "🛍️" ,},
+    { label: "Vegetable & Fruits Shop", href: "/products/vegetable-fruit-billing-software", icon: "🥬", },
+    { label: "Garments & Textiles Shop", href: "/products/textile-billing-software", icon: "👗", },
+    { label: "Footwear Shop", href: "/products/footwear-billing-software", icon: "👟", },
+    {label: "Mobile & Computer Shop", href: "/products/mobile-computer-shop-billing-software",icon: "📱",},
    
-    { label: "Spa & Salon Shop", href: "/products/spa", icon: "💆" ,},     
+    { label: "Spa & Salon Shop", href: "/products/spa-salon-billing-software", icon: "💆" ,},     
     ] },
     {
       id: "WholeSale",  label: "Distribution Software", 
-      items:[{label: "WholeSale & Agencies Shop", href: "/products/Agencies", icon: "📦"},
-        { label: "Home Appliances Shop", href: "/products/home-appliances", icon: "🏠" },
-        { label: "Electrical & Electronics Shop ", href: "/products/electronics", icon: "⚡",  },
+      items:[{label: "WholeSale & Agencies Shop", href: "/products/agency-billing-software", icon: "📦"},
+        { label: "Home Appliances Shop", href: "/products/home-appliances-store-billing-software", icon: "🏠" },
+        { label: "Electrical & Electronics Shop ", href: "/products/electrical-electronics-shop-billing-software", icon: "⚡",  },
       ]
     },
     {
@@ -77,22 +77,22 @@ const MEGA_MENU = [
       items: [
         {
           label: "Hardware & Plywood Software",
-          href: "/products/hardwareshopbillingsoftware",
+          href: "/products/hardware-billing-software",
           icon: "🔧",
         },
         {
           label: "Automobile & Spares Software",
-          href: "/products/automobilebillingsoftware",
+          href: "/products/automobile-billing-software",
           icon: "🚗",
         },
         {
           label: "GST Billing Software",
-          href: "/products/gst-billing",
+          href: "/products/gst-billing-software",
           icon: "📋",
         },
         {
           label: "Warehouse Inventory Management System Software",
-          href: "/products/warehouse-inventory-management-system",
+          href: "/products/warehouse-inventory-management-system-software",
           icon: "🏬",
         },
         {
@@ -112,13 +112,13 @@ const MEGA_MENU = [
         },
       ],
     },
-    { id: "cloud",      label: "Cloud Billing Software", items: [{ label: "Cloud Offline & Online Billing Software", href: "/products/cloud", icon: "☁️" },{ label: "Web-Based Billing Softwere", href: "/products/web-billing", icon: "🌐" },{ label: "Warehouse Management Billing Software", href: "/products/warehouse", icon: "🏭" }] },
+    { id: "cloud",      label: "Cloud Billing Software", items: [{ label: "Cloud Offline & Online Billing Software", href: "/products/cloud-billing-software", icon: "☁️" },{ label: "Web-Based Billing Softwere", href: "/products/web-billing", icon: "🌐" },{ label: "Warehouse Management Billing Software", href: "/products/warehouse", icon: "🏭" }] },
   {
     id: "restaurant",
     label: "Restaurant Software",
     items: [
-      { label: "Restaurant POS Software ", href: "/products/restaurant", icon: "🍽️" },
-      { label: "Bakery & Sweets Shop", href: "/products/bakery", icon: "🥐" },
+      { label: "Restaurant POS Software ", href: "/products/restaurant-pos-software", icon: "🍽️" },
+      { label: "Bakery & Sweets Shop", href: "/products/bakery-billing-software", icon: "🥐" },
       { label: "Cafe Billing", href: "/products/cafe", icon: "☕" },
       { label: "Bar & Liquor Software", href: "/products/bar", icon: "🍺" },
       { label: "Food Court Software", href: "/products/food-court", icon: "🍜" },
@@ -146,7 +146,10 @@ const MEGA_MENU = [
     ],
   },
 
-  { id: "meat",       label: "Chicken & Meat Shop"  ,   items: [{ label: "Chicken & Meat Shop Software", href: "/products/chickenbillingsoftware", icon: "🍗" },] },
+  { id: "meat",      
+   label: "Chicken & Meat Shop"  ,   
+   items: [{ label: "Chicken & Meat Shop Software", 
+    href: "/products/chicken-shop-billing-software", icon: "🍗" },] },
 
 ];
 

@@ -3,10 +3,16 @@
 import { motion } from "framer-motion";
 
 const CLIENTS = [
-  { src: "/clients/brown.webp", alt: "Brown" },
-  { src: "/clients/green_mantra.webp", alt: "Green Mantra" },
-  { src: "/clients/knt.webp", alt: "KNT" },
-  { src: "/clients/vaer.webp", alt: "Vaer" },
+  { src: "/clients/BALAJI_IYANGAR _BACKERY.webp", alt: "Billing Software in Chennai" },
+  { src: "/clients/LOOK_AT_ME_FASHION_TEXTILE.webp", alt: "Retail Billing Software in Chennai" },
+  { src: "/clients/LUCKY_EMPORIUM.webp", alt: "GST Billing Software Chennai" },
+  { src: "/clients/M_FOR_MEN _TEXTILE.webp", alt: "POS Software Chennai" },
+  { src: "/clients/MY _SRI_SUPERMARKET.webp", alt: "Inventory Management Software Chennai" },
+  { src: "/clients/SUPREME_STORE _SUPERMARKET_WHOLESALE.webp", alt: "Inventory Management Software Chennai" },
+  { src: "/clients/brown.webp", alt: "Billing Software in Chennai" },
+  { src: "/clients/green_mantra.webp", alt: "Retail Billing Software in Chennai" },
+  { src: "/clients/knt.webp", alt: "GST Billing Software Chennai" },
+  { src: "/clients/vaer.webp", alt: "Inventory Management Software Chennai" },
 ];
 
 const DOUBLED = [...CLIENTS, ...CLIENTS, ...CLIENTS, ...CLIENTS];

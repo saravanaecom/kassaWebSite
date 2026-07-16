@@ -21,11 +21,12 @@ const WaSvg = ({ size = 20 }: { size?: number }) => (
 const SLIDES = [
   {
     image: "/images/hero.webp",
-    tag: "Smart Retail Billing Solution",
-    h1: "Complete Retail Store Management",
-    h2: "Beyond Just Billing",
-    // h3: "for Modern Businesses",
-    sub: "Manage sales, stock, customers, profit, and GST billing from one powerful retail platform.",
+    alt: "Billing Software in Chennai",
+    tag: "Billing Software in Chennai ",
+    h1: "Smart Retail Billing",
+    h2: " Software for Every Business",
+    h3: "for Modern Businesses",
+    sub: "Manage your retail business with KassaPOS, the leading Billing Software in Chennai. Generate GST-compliant invoices, manage inventory, track sales, print barcode bills, and monitor multiple branches from a single platform. Designed for growing retail businesses with cloud and offline support.",
     features: [
       "Fast Barcode Billing",
       "Multi MRP Management",
@@ -37,6 +38,7 @@ const SLIDES = [
   },
   {
     image: "/images/hero1.webp",
+    alt: "Retail Billing Software in Chennai",
     tag: "Smart Supermarket Management",
     h1: "Run Your Supermarket",
     h2: "With Total Business",
@@ -53,6 +55,7 @@ const SLIDES = [
   },
   {
     image: "/images/hero2.webp",
+    alt: "GST Billing Software Chennai",
     tag: "Cloud Business Platform",
     h1: "Access ",
     h2: "Your Business",
@@ -69,11 +72,12 @@ const SLIDES = [
   },
   {
     image: "/images/hero3.webp",
+    alt: "POS Software Chennai",
     tag: "Wholesale Distribution Software",
-    h1: "Manage ",
-    h2: "Sales, Collections And ",
-     h3: "Outstanding Payments",
-    sub: "Built for wholesalers, distributors, agencies, and stockists who need complete operational visibility.",
+    h1: "Complete GST Billing & ",
+    h2: "Inventory Management Software",
+     
+    sub: "Our software includes GST billing, barcode billing, inventory tracking, purchase management, supplier management, cloud backup, offline billing, mobile reports and role-based access.",
     features: [
       "Outstanding Tracking",
       "Party Ledger Management",
@@ -85,6 +89,7 @@ const SLIDES = [
   },
   {
     image: "/images/hero4.webp",
+    alt: "Inventory Management Software Chennai",
     tag: "Mobile Billing App",
     h1: "Business in Your Pocket",
     h2: "Billing at Your Fingertips",
@@ -333,7 +338,7 @@ export function HeroSection() {
                 <Image
                   key={s.image}
                   src={s.image}
-                  alt={s.h1}
+                  alt={s.alt}
                   fill
                   priority={i === 0}
                   sizes="(max-width: 768px) 100vw, 50vw"

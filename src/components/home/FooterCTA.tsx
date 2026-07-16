@@ -38,7 +38,7 @@ export function FooterCTA() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/Footer.webp"
-        alt=""
+        alt="Billing Software in Chennai"
         aria-hidden
         style={{
           position: "absolute",

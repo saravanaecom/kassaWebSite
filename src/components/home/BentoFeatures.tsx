@@ -199,8 +199,8 @@ export function BentoFeatures() {
     <section className="section-padding" style={{ background: "#F8FAFF", padding: "52px 0 56px" }}>
       <div className="container-xl">
         <ScrollReveal className="text-center mb-12">
-          <SectionLabel className="mx-auto mb-4">Platform Features</SectionLabel>
-          <h2
+          <SectionLabel className="mx-auto mb-4">Powerful Features of KassaPOS</SectionLabel>
+          {/* <h2
             className="font-display font-bold text-slate-900 mb-4"
             style={{ fontSize: "clamp(1.7rem, 3.5vw, 2.8rem)", lineHeight: 1.15 }}
           >
@@ -211,7 +211,18 @@ export function BentoFeatures() {
           <p className="text-[15px] text-slate-500 max-w-lg mx-auto">
             70+ features built specifically for Indian retail.
             No unnecessary complexity — just what works.
-          </p>
+          </p> */}
+
+<h2
+  className="font-display font-bold text-slate-900 mb-4"
+  style={{ fontSize: "clamp(1.7rem, 3.5vw, 2.8rem)", lineHeight: 1.15 }}
+>
+  Grow Your Business with <span className="gradient-text">KASSAPOS</span>
+</h2>
+
+<p className="text-[15px] text-slate-500 max-w-6xl mx-auto leading-7">
+Fast billing, barcode support, stock alerts, multi-payment, loyalty program, CRM, analytics, thermal printer support, e-invoice ready, cloud synchronization.
+</p>
         </ScrollReveal>
 
         <div className="flex flex-col gap-4">

@@ -30,43 +30,6 @@ const CARDS = [
   { id: "warehouse",       label: "Warehouse",          color: "#8B5CF6", desc: "Stock Transfer & Purchase Orders" },
 ];
 
-// function CardIcon({ id, color }: { id: string; color: string }) {
-//   const p = { size: 36, strokeWidth: 1.6 };
-//   const icons: Record<string, React.ReactNode> = {
-//     supermarket:      <ShoppingCart {...p} />,
-//     restaurant:       <Utensils {...p} />,
-//     // pharmacy:         <Pill {...p} />,
-//     mobile:           <Smartphone {...p} />,
-//     textile:          <Scissors {...p} />,
-//     bakery:           <Cookie {...p} />,
-//     hardware:         <Wrench {...p} />,
-//     spa:              <Sparkles {...p} />,
-//     footwear:         <Footprints {...p} />,
-//     "restaurant-bar": <Wine {...p} />,
-//     vegetables:       <Leaf {...p} />,
-//     // jewellery:        <Gem {...p} />,
-//     automobile:       <Car {...p} />,
-//     warehouse:        <Warehouse {...p} />,
-//     retail:           <ShoppingBag {...p} />,
-//     cloud:            <Cloud {...p} />,
-//   };
-//   return (
-//     <div
-//       style={{
-//         width: 72, height: 72,
-//         borderRadius: 20,
-//         background: `${color}14`,
-//         border: `1.5px solid ${color}28`,
-//         display: "flex", alignItems: "center", justifyContent: "center",
-//         color,
-//         flexShrink: 0,
-//         boxShadow: `0 4px 16px ${color}18`,
-//       }}
-//     >
-//       {icons[id] ?? <ShoppingCart {...p} />}
-//     </div>
-//   );
-// }
 function CardIcon({ id, color }: { id: string; color: string }) {
   const p = { size: 36, strokeWidth: 1.8 };
 
@@ -246,11 +209,26 @@ export function IndustryCardsStrip() {
               }}
             >
               <Sparkles size={11} color="#F59E0B" />
-              16+ Industries
+              16+ Industries We Serve
               <Sparkles size={11} color="#F59E0B" />
             </div>
+
             <div style={{ height: 1, flex: 1, maxWidth: 80, background: "linear-gradient(90deg, #CBD5E1, transparent)" }} />
           </div>
+
+          <p
+            className="text-slate-500 mx-auto mt-4"
+            style={{
+              maxWidth: 720,
+              fontSize: "0.85rem",
+              lineHeight: 1.7,
+              letterSpacing: "0.01em",
+            }}
+          >
+            Supermarkets, Grocery Stores, Restaurants, Pharmacies, Textile Stores,
+            Hardware Shops, Mobile Stores, Electronics, Bakery, Footwear, Wholesale
+            and Distribution.
+          </p>
         </div>
 
         {/* Slider */}

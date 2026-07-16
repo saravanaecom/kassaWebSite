@@ -337,10 +337,10 @@ export function VideoTestimonialsSection() {
             className="font-display font-bold text-slate-900 mb-4"
             style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.8rem)", lineHeight: 1.15 }}
           >
-            Hear it from <span className="gradient-text">real businesses</span>
+            Why Businesses in Chennai  <span className="gradient-text">Trust KassaPOS</span>
           </h2>
           <p className="text-base text-slate-500 max-w-lg mx-auto" style={{ lineHeight: 1.7 }}>
-            Watch how Kassapos is transforming retail and hospitality businesses across Tamil Nadu and South India.
+          Easy implementation, local support, secure cloud platform, affordable pricing and scalable architecture for every retail business.
           </p>
         </ScrollReveal>
 
