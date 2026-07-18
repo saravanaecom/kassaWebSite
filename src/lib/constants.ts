@@ -375,19 +375,19 @@ export const NAV_PRODUCTS = [
   {
     category: "Retail & Supermarket",
     items: [
-      { label: "Supermarket POS", href: "/products/supermarket", icon: "🏪" },
-      { label: "Retail Billing", href: "/products/retail", icon: "🛍️" },
-      { label: "Vegetable & Fruits", href: "/products/vegetables", icon: "🥬" },
-      { label: "Hardware Shop", href: "/products/hardware", icon: "🔧" },
-      { label: "Footwear Shop", href: "/products/footwear", icon: "👟" },
-      { label: "Mobile Shop", href: "/products/mobile", icon: "📱" },
+      { label: "Supermarket POS", href: "/products/supermarket-billing-software", icon: "🏪" },
+      { label: "Retail Billing", href: "/products/retail-billing-software", icon: "🛍️" },
+      { label: "Vegetable & Fruits", href: "/products/vegetable-fruit-billing-software", icon: "🥬" },
+      { label: "Hardware Shop", href: "/products/hardware-billing-software", icon: "🔧" },
+      { label: "Footwear Shop", href: "/products/footwear-billing-software", icon: "👟" },
+      { label: "Mobile Shop", href: "/products/mobile-shop-billing-software", icon: "📱" },
     ],
   },
   {
     category: "Food & Hospitality",
     items: [
-      { label: "Restaurant POS", href: "/products/restaurant", icon: "🍽️" },
-      { label: "Bakery Software", href: "/products/bakery", icon: "🥐" },
+      { label: "Restaurant POS", href: "/products/restaurant-pos-software", icon: "🍽️" },
+      { label: "Bakery Software", href: "/products/bakery-billing-software", icon: "🥐" },
       { label: "Cafe Billing", href: "/products/cafe", icon: "☕" },
       { label: "Bar & Liquor", href: "/products/bar", icon: "🍺" },
       { label: "Food Court", href: "/products/food-court", icon: "🍜" },
@@ -397,12 +397,12 @@ export const NAV_PRODUCTS = [
   {
     category: "Cloud & Enterprise",
     items: [
-      { label: "Cloud Billing", href: "/products/cloud", icon: "☁️" },
+      { label: "Cloud Billing", href: "/products/cloud-billing-software", icon: "☁️" },
       { label: "Web-Based Billing", href: "/products/web-billing", icon: "🌐" },
-      { label: "Warehouse Management", href: "/products/warehouse", icon: "🏭" },
-      { label: "Textiles & Garments", href: "/products/textile", icon: "👗" },
-      { label: "Automobile & Spares", href: "/products/automobile", icon: "🚗" },
-      { label: "GST Billing", href: "/products/gst-billing", icon: "📋" },
+      { label: "Warehouse Management", href: "/products/warehouse-inventory-management-system-software", icon: "🏭" },
+      { label: "Textiles & Garments", href: "/products/textile-billing-software", icon: "👗" },
+      { label: "Automobile & Spares", href: "/products/automobile-billing-software", icon: "🚗" },
+      { label: "GST Billing", href: "/products/gst-billing-software", icon: "📋" },
     ],
   },
 ];
