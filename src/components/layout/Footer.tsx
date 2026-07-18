@@ -40,13 +40,13 @@ const SvgLinkedin = () => (
 );
 
 const FOOTER_PRODUCTS = [
-  { label: "Supermarket POS", href: "/products/supermarket" },
-  { label: "Retail Billing", href: "/products/retail" },
-  { label: "Restaurant POS", href: "/products/restaurant" },
-  { label: "Cloud Billing", href: "/products/cloud" },
-  { label: "Textiles Software", href: "/products/textile" },
-  { label: "Warehouse Management", href: "/products/warehouse" },
-  { label: "GST Billing", href: "/products/gst-billing" },
+  { label: "Supermarket POS", href: "/products/supermarket-billing-software" },
+  { label: "Retail Billing", href: "/products/retail-billing-software" },
+  { label: "Restaurant POS", href: "/products/restaurant-pos-software" },
+  { label: "Cloud Billing", href: "/products/cloud-billing-software" },
+  { label: "Textiles Software", href: "/products/textile-billing-software" },
+  { label: "Warehouse Management", href: "/products/warehouse-inventory-management-system-software" },
+  { label: "GST Billing", href: "/products/gst-billing-software" },
   { label: "All Products →", href: "/products" },
 ];
 
