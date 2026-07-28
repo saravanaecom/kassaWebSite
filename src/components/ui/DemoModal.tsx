@@ -194,7 +194,7 @@ export function DemoModal() {
                   </span>
                 </div>
 
-                <h2
+                {/* <h2
                   style={{
                     color: "#FFFFFF",
                     fontSize: "1.15rem",
@@ -208,11 +208,26 @@ export function DemoModal() {
                 </h2>
                 <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.78rem", lineHeight: 1.5 }}>
                   Our expert will call &amp; show Kassapos live — customised for your business.
-                </p>
+                </p> */}
+                <h2
+  style={{
+    color: "#FFFFFF",
+    fontSize: "1.15rem",
+    fontWeight: 800,
+    lineHeight: 1.2,
+    letterSpacing: "-0.02em",
+    marginBottom: 4,
+  }}
+>
+  Book a Free Demo
+</h2>
+<p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.78rem", lineHeight: 1.5 }}>
+  Schedule a free demo to see how KassaPOS can streamline billing and inventory management.
+</p>
 
                 {/* Trust pills */}
                 <div style={{ display: "flex", gap: 6, marginTop: 10, flexWrap: "wrap" }}>
-                  {["30-min session", "No credit card", "Tamil support"].map((tag) => (
+                  {["30-min session", "credit card", "Tamil support"].map((tag) => (
                     <span
                       key={tag}
                       style={{

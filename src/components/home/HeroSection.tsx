@@ -24,7 +24,7 @@ const SLIDES = [
     alt: "Billing Software in Chennai",
     tag: "Billing Software in Chennai ",
     h1: "Smart Retail Billing",
-    h2: " Software for Every Business",
+    h2: "Software for Every Business",
     h3: "for Modern Businesses",
     sub: "Manage your retail business with KassaPOS, the leading Billing Software in Chennai. Generate GST-compliant invoices, manage inventory, track sales, print barcode bills, and monitor multiple branches from a single platform. Designed for growing retail businesses with cloud and offline support.",
     features: [
@@ -39,7 +39,7 @@ const SLIDES = [
   {
     image: "/images/hero1.webp",
     alt: "Retail Billing Software in Chennai",
-    tag: "Smart Supermarket Management",
+    tag: "Smart Supermarket Management in Chennai",
     h1: "Run Your Supermarket",
     h2: "With Total Business",
      h3: "Control",
@@ -55,8 +55,8 @@ const SLIDES = [
   },
   {
     image: "/images/hero2.webp",
-    alt: "GST Billing Software Chennai",
-    tag: "Cloud Business Platform",
+    alt: "GST Billing Software in Chennai",
+    tag: "Cloud Business Platform in Chennai",
     h1: "Access ",
     h2: "Your Business",
     h3: "Anywhere, Anytime",
@@ -72,8 +72,8 @@ const SLIDES = [
   },
   {
     image: "/images/hero3.webp",
-    alt: "POS Software Chennai",
-    tag: "Wholesale Distribution Software",
+    alt: "POS Software in Chennai",
+    tag: "Wholesale Distribution Software in Chennai",
     h1: "Complete GST Billing & ",
     h2: "Inventory Management Software",
      
@@ -89,8 +89,8 @@ const SLIDES = [
   },
   {
     image: "/images/hero4.webp",
-    alt: "Inventory Management Software Chennai",
-    tag: "Mobile Billing App",
+    alt: "Inventory Management Software in Chennai",
+    tag: "Mobile Billing App in Chennai",
     h1: "Business in Your Pocket",
     h2: "Billing at Your Fingertips",
     // h3: "for Every Business",
@@ -167,7 +167,7 @@ export function HeroSection() {
           <div>
             {/* Badge */}
             <AnimatePresence mode="wait" initial={false}>
-              <motion.div 
+              <motion.h1 
                 key={`tag-${current}`}
                 variants={contentVariants}
                 initial="enter" animate="center" exit="exit"
@@ -184,7 +184,7 @@ export function HeroSection() {
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
                   {slide.tag}
                 </div>
-              </motion.div>
+              </motion.h1>
             </AnimatePresence>
 
             {/* Headline */}
@@ -200,7 +200,7 @@ export function HeroSection() {
                 <span style={{ display: "block", fontSize: "clamp(1.75rem, 3.2vw, 2.65rem)", color: "#0F172A" }}>
                   {slide.h1}
                 </span>
-                <span style={{ display: "block", fontSize: "clamp(2rem, 3.8vw, 3rem)", color: "#2563EB" }}>
+                <span style={{ display: "block", fontSize: "clamp(2rem, 3.8vw, 2.5rem)", color: "#2563EB" }}>
                   {slide.h2}
                 </span>
                 <span style={{ display: "block", fontSize: "clamp(1.75rem, 3.2vw, 2.65rem)", color: "#0F172A" }}>

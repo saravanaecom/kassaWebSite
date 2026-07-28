@@ -199,7 +199,8 @@ export function BentoFeatures() {
     <section className="section-padding" style={{ background: "#F8FAFF", padding: "52px 0 56px" }}>
       <div className="container-xl">
         <ScrollReveal className="text-center mb-12">
-          <SectionLabel className="mx-auto mb-4">Powerful Features of KassaPOS</SectionLabel>
+          <SectionLabel as="h2" className="mx-auto mb-4">Powerful Features of KassaPOS</SectionLabel>
+
           {/* <h2
             className="font-display font-bold text-slate-900 mb-4"
             style={{ fontSize: "clamp(1.7rem, 3.5vw, 2.8rem)", lineHeight: 1.15 }}

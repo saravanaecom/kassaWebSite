@@ -209,7 +209,7 @@ export function IndustryCardsStrip() {
               }}
             >
               <Sparkles size={11} color="#F59E0B" />
-              16+ Industries We Serve
+              <h2>16+ Industries We Serve</h2>
               <Sparkles size={11} color="#F59E0B" />
             </div>
 

@@ -1,12 +1,19 @@
 import { cn } from "@/lib/utils";
+import type { ElementType, ReactNode } from "react"; 
 
 interface SectionLabelProps {
   children: React.ReactNode;
   className?: string;
   variant?: "default" | "cyan" | "amber";
+  as?: ElementType;
 }
 
-export function SectionLabel({ children, className, variant = "default" }: SectionLabelProps) {
+export function SectionLabel({
+  children,
+  className,
+  variant = "default",
+  as: Tag = "div",
+}: SectionLabelProps) {
   return (
     <div
       className={cn(
@@ -26,6 +33,7 @@ export function SectionLabel({ children, className, variant = "default" }: Secti
     >
       <span className={cn(
         "w-1.5 h-1.5 rounded-full",
+        
         variant === "default" && "bg-brand-500",
         variant === "cyan" && "bg-accent-500",
         variant === "amber" && "bg-amber-400",
