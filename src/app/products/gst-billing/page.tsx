@@ -164,7 +164,7 @@ export default function SupermarketPage() {
               style={{ marginLeft: 50}}
             >
               {/* Badge — matches HeroSection badge style */}
-              <motion.h1
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
@@ -182,8 +182,8 @@ export default function SupermarketPage() {
     animation: "pulse 2s infinite",
   }}
 />{" "}
-GST Billing Software in Chennai
-</motion.h1>
+GST Billing & Invoice Software
+</motion.div>
 {/* H1 */}
 <h1
   className="font-display font-extrabold mb-4"
@@ -208,9 +208,15 @@ GST Billing Software in Chennai
   }}
 >
   <strong style={{ color: "#0F172A", fontWeight: 700 }}>
-    Kassapos GST Billing & Invoice Software in Chennai
+    Kassapos GST Billing & Invoice Software
   </strong>{" "}
-  a powerful POS solution for retailers, wholesalers, supermarkets, pharmacies, and growing businesses. Easily generate GST-compliant invoices, automate tax calculations, manage inventory, and speed up billing with barcode scanning. With cloud and offline billing, real-time reports, and local implementation and support in Chennai, KassaPOS helps businesses simplify operations, improve billing accuracy, and stay GST compliant.
+  helps businesses create GST-compliant invoices, manage billing, track sales,
+  monitor expenses, generate tax reports, and streamline day-to-day business
+  operations from a single platform. Easily create professional invoices,
+  manage customer accounts, send payment reminders, and generate accurate GST
+  reports with a fast, secure, and user-friendly billing solution designed for
+  retail stores, wholesalers, distributors, trading businesses, and service
+  providers.
 </p>
 
               {/* Quick features — adapted to light bg */}

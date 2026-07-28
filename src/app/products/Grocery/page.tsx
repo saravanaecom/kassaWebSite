@@ -15,6 +15,9 @@ import { openDemoModal } from "@/components/ui/DemoModal";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
+
+
+
 import youtuberbqmnner from "../../../../public/images/super2.png"
 
 
@@ -24,14 +27,14 @@ const WA_SVG = ({ size = 17 }: { size?: number }) => (
   </svg>
 );
 
-const YOUTUBE_ID = "_tDs9grI1gE";
+const YOUTUBE_ID = "NrlQ7Z1sK-0";
 
 const QUICK_FEATURES = [
-  { label: "SerialNo Wise Billing",              color: "#2563EB" },
-  { label: "Serial Number Tracking",         color: "#7C3AED" },
-  { label: "Product Services Entry",        color: "#059669" },
-  { label: "Purchase History",            color: "#D97706" },
-  { label: "Einvoice,Eway Integration",   color: "#DC2626" },
+  { label: "BarCode Billing",              color: "#2563EB" },
+  { label: "Multiple MRP Billing",         color: "#7C3AED" },
+  { label: "Free Offer Management",        color: "#059669" },
+  { label: "Bill Hold Options",            color: "#D97706" },
+  { label: "Weighing Scale Integration",   color: "#DC2626" },
   { label: "WhatsApp Integration",         color: "#16A34A" },
   { label: "Mobile Report App",            color: "#0284C7" },
   { label: "Google Drive AutoBackup",      color: "#EA4335" },
@@ -45,13 +48,13 @@ const TABS = [
     icon: <ShoppingCart size={18} />,
     color: "#2563EB",
     items: [
-      "Serial Number Wise Billing",
-      "Serial Number Tracking",
-      "Estimate Billing Options",
-      "Product Services Management",
-      "Multiple Company Management",
-      "Billing Printer A4 Invoice Format",
-      "Quotation Format | Delivery challan|Sale Order",
+      "Easy & Fast Billing & Barcode Printing",
+      "User friendly POS System | Works Offline & Online | Cloud Based",
+      "English & Tamil Language Support",
+      "Expiry Date | Manufacture Date | Batch No",
+      "Free offers & Scheme Management",
+      "Multi MRP for One Product",
+      "Repacking for Own Products",
       "Weighing Scale Integrate with Billing Screen",
       "Cashier Wise Cash Denomination Counter Closing",
       "Negative Stock Management",
@@ -164,7 +167,7 @@ export default function SupermarketPage() {
               style={{ marginLeft: 50}}
             >
               {/* Badge — matches HeroSection badge style */}
-              <motion.h1
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
@@ -172,46 +175,26 @@ export default function SupermarketPage() {
                
                 style={{ background: "rgba(37,99,235,0.08)", color: "#2563EB", border: "1px solid rgba(37,99,235,0.18)" }}
               >
-<span
-  style={{
-    width: 6,
-    height: 6,
-    borderRadius: "50%",
-    background: "#2563EB",
-    display: "inline-block",
-    animation: "pulse 2s infinite",
-  }}
-/>{" "}
-GST Billing Software in Chennai
-</motion.h1>
-{/* H1 */}
-<h1
-  className="font-display font-extrabold mb-4"
-  style={{
-    fontSize: "clamp(2rem, 2.5vw, 4rem)",
-    lineHeight: 1.13,
-    letterSpacing: "-0.02em",
-    color: "#0F172A",
-  }}
->
-  Smart <span style={{ color: "#2563EB" }}>GST Billing & Invoice Software</span>
-</h1>
+                <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#2563EB", display: "inline-block", animation: "pulse 2s infinite" }} />
+                Grocery Billing Software
+              </motion.div>
 
-<p
-  style={{
-    color: "#64748B",
-    marginBottom: 28,
-    fontSize: "0.95rem",
-    lineHeight: 1.75,
-    maxWidth: 620,
-    marginLeft: "0%",
-  }}
->
-  <strong style={{ color: "#0F172A", fontWeight: 700 }}>
-    Kassapos GST Billing & Invoice Software in Chennai
-  </strong>{" "}
-  a powerful POS solution for retailers, wholesalers, supermarkets, pharmacies, and growing businesses. Easily generate GST-compliant invoices, automate tax calculations, manage inventory, and speed up billing with barcode scanning. With cloud and offline billing, real-time reports, and local implementation and support in Chennai, KassaPOS helps businesses simplify operations, improve billing accuracy, and stay GST compliant.
-</p>
+              {/* H1 */}
+              <h1
+                className="font-display font-extrabold mb-4"
+                 style={{ fontSize: "clamp(2rem, 2.5vw, 1rem)", lineHeight: 1.13, letterSpacing: "-0.02em", color: "#0F172A" }}
+              >
+                Grocery &{" "}
+                <span style={{ color: "#2563EB" }}>Hypermarket</span>
+                <br/>POS Software
+                
+              </h1>
+
+              <p style={{ color: "#64748B", marginBottom: 28, fontSize: "0.95rem", lineHeight: 1.75, maxWidth: 520 ,marginLeft: "0%"}}>
+              Kassapos Software Solutions is a Best   <strong style={{ color: "#0F172A", fontWeight: 700 }}>
+              Grocery Billing Software in Chennai.
+  </strong>Grocery is a large-scale retail organization, selling a wide variety of consumer goods on the principle of self-service. It is a retail trading organization which resembles departmental stores but has a distinctive feature of self-service.
+              </p>
 
               {/* Quick features — adapted to light bg */}
               {/* <div className="grid grid-cols-2 gap-2.5 mb-8">
@@ -352,7 +335,7 @@ onClick={openDemoModal}
               {!videoPlaying ? (
                 <div className="relative cursor-pointer" style={{ aspectRatio: "16/9", background: "#000" }} onClick={() => setVideoPlaying(true)}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img   src="/images/GSTBillingSoftware.webp"alt="Kassapos Supermarket POS Demo" style={{ width: "120%", height: "170%", objectFit: "cover", opacity: 0.82 }} />
+                  <img   src="/images/super-market.webp"alt="Kassapos Supermarket POS Demo" style={{ width: "120%", height: "175%", objectFit: "cover", opacity: 0.82 }} />
                   <div className="absolute inset-0 flex items-center justify-center">
                     {/* <motion.div whileHover={{ scale: 1.1 }} style={{ width: 76, height: 76, borderRadius: "50%", background: "#FF0000", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 8px 32px rgba(255,0,0,0.6)",left: "clamp(0px, 6vw, 200px)", }}>
                       <Play size={30} fill="white" color="white" style={{ marginLeft: 4 }} />
@@ -389,24 +372,7 @@ onClick={openDemoModal}
                 <div style={{ aspectRatio: "16/9" }}>
                   <iframe width="100%" height="150%" src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1`} title="Kassapos Supermarket POS Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ display: "block" }} />
                 </div>
-//                 <div
-//   style={{
-//     width: "95%", // adjust pannunga
-//     marginLeft: "auto",
-//     aspectRatio: "16/9",
-//   }}
-// >
-//   <iframe
-//     width="100%"
-//     height="100%"
-//     src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1`}
-//     title="Kassapos Supermarket POS Demo"
-//     frameBorder="0"
-//     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//     allowFullScreen
-//     style={{ display: "block" }}
-//   />
-// </div>
+
               )}
             </motion.div>
             
@@ -423,18 +389,6 @@ onClick={openDemoModal}
       <section style={{ background: "#F4F7FF", padding: "0 0" }}>  
         <div className="container-xl" style={{ paddingLeft: 24, paddingRight: 24 }}>
 
-          {/* <motion.div
-            className="text-center mb-14"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.45, ease: EASE_EXPO }}
-          >
-            <h2 className="font-display font-bold text-slate-900 mb-2" style={{ fontSize: "clamp(1.6rem, 3vw, 2.3rem)" }}>
-            All-in-One Supermarket Management Solution
-            </h2>
-            <p className="text-slate-500 text-sm">Everything you need to streamline billing, inventory, purchasing, reporting, and customer management in one platform.</p>
-          </motion.div> */}
 
 <motion.div
   className="text-center mb-14"
@@ -443,10 +397,31 @@ onClick={openDemoModal}
   viewport={{ once: true }}
   transition={{ duration: 0.45, ease: EASE_EXPO }}
 >
+  <SectionLabel className="mx-auto mb-4">
+    Complete Business Suite
+  </SectionLabel>
 
-<SectionLabel className="mx-auto mb-4"> Warehouse Management Suite </SectionLabel> <h2 className="font-display font-bold text-slate-900 mb-4" style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.8rem)", lineHeight: 1.15, }} > Manage your entire{" "} <span className="gradient-text"> warehouse operations </span> <br /> from a single platform </h2> <p className="text-base text-slate-500 max-w-xl mx-auto" style={{ lineHeight: 1.7 }} > Simplify inventory tracking, warehouse management, stock transfers, purchase management, shipping, logistics, barcode scanning, reporting, and real-time inventory control with one powerful solution built for modern warehouses and distribution businesses. </p>
+  <h2
+  className="font-display font-bold text-slate-900 mb-4 lg:whitespace-nowrap"
+  style={{
+    fontSize: "clamp(1.30rem, 3.5vw, 2.5rem)",
+    lineHeight: 1.15,
+  }}
+>
+    Manage Your Entire{" "}
+    <span className="gradient-text">
+    Grocery Operations
+    </span>        From a Single Platform
+  </h2>
 
-
+  <p
+    className="text-base text-slate-500 max-w-3xl mx-auto"
+    style={{ lineHeight: 1.7 }}
+  >
+    Simplify billing, inventory, purchasing, stock control,
+    customer management, analytics, and GST reporting with one
+    powerful solution designed for modern retail businesses.
+  </p>
 </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">

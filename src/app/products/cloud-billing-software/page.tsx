@@ -165,7 +165,7 @@ export default function SupermarketPage() {
               style={{ marginLeft: 50}}
             >
               {/* Badge — matches HeroSection badge style */}
-              <motion.div
+              <motion.h1
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
@@ -174,8 +174,8 @@ export default function SupermarketPage() {
                 style={{ background: "rgba(37,99,235,0.08)", color: "#2563EB", border: "1px solid rgba(37,99,235,0.18)" }}
               >
                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#2563EB", display: "inline-block", animation: "pulse 2s infinite" }} />
-                Cloud Billing Software
-              </motion.div>
+                Cloud Billing Software in Chennai
+              </motion.h1>
 
               {/* H1 */}
               <h1
@@ -188,7 +188,7 @@ export default function SupermarketPage() {
               </h1>
 
               <p style={{ color: "#64748B", marginBottom: 28, fontSize: "0.95rem", lineHeight: 1.75, maxWidth: 520 ,marginLeft: "0%"}}>
-              KASSAPOS Cloud Billing Software helps businesses manage billing, inventory, sales, and customer operations from a single cloud-based platform. With <strong style={{ color: "#0F172A", fontWeight: 700 }}>
+              KASSAPOS Cloud Billing Software in Chennai helps businesses manage billing, inventory, sales, and customer operations from a single cloud-based platform. With <strong style={{ color: "#0F172A", fontWeight: 700 }}>
               seamless online and offline functionality, you can access real-time business data anytime,
   </strong>anywhere.
               </p>
@@ -425,7 +425,7 @@ onClick={openDemoModal}
   transition={{ duration: 0.45, ease: EASE_EXPO }}
 >
   <SectionLabel className="mx-auto mb-4">
-    Cloud Billing Software
+    Cloud Billing Software in Chennai
   </SectionLabel>
 
   <h2

@@ -15,7 +15,7 @@ import { openDemoModal } from "@/components/ui/DemoModal";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
-import youtuberbqmnner from "../../../../public/images/super2.png"
+
 
 
 const WA_SVG = ({ size = 17 }: { size?: number }) => (
@@ -24,14 +24,14 @@ const WA_SVG = ({ size = 17 }: { size?: number }) => (
   </svg>
 );
 
-const YOUTUBE_ID = "_tDs9grI1gE";
+const YOUTUBE_ID = "vhTvrD_ArZ4";
 
 const QUICK_FEATURES = [
-  { label: "SerialNo Wise Billing",              color: "#2563EB" },
-  { label: "Serial Number Tracking",         color: "#7C3AED" },
-  { label: "Product Services Entry",        color: "#059669" },
-  { label: "Purchase History",            color: "#D97706" },
-  { label: "Einvoice,Eway Integration",   color: "#DC2626" },
+  { label: "LiveChicken Stock",              color: "#2563EB" },
+  { label: " Wholesale Billing",         color: "#7C3AED" },
+  { label: " Retail & WholeSale Rate",        color: "#059669" },
+  { label: " Day Close With Mail",            color: "#D97706" },
+  { label: "Weighing Scale Integration",   color: "#DC2626" },
   { label: "WhatsApp Integration",         color: "#16A34A" },
   { label: "Mobile Report App",            color: "#0284C7" },
   { label: "Google Drive AutoBackup",      color: "#EA4335" },
@@ -45,18 +45,16 @@ const TABS = [
     icon: <ShoppingCart size={18} />,
     color: "#2563EB",
     items: [
-      "Serial Number Wise Billing",
-      "Serial Number Tracking",
-      "Estimate Billing Options",
-      "Product Services Management",
-      "Multiple Company Management",
-      "Billing Printer A4 Invoice Format",
-      "Quotation Format | Delivery challan|Sale Order",
-      "Weighing Scale Integrate with Billing Screen",
-      "Cashier Wise Cash Denomination Counter Closing",
-      "Negative Stock Management",
-      "CRM Points & Loyalty Management",
-      "Minimum Stock Alert in the Billing Screen",
+      "Retail & Wholesale Customer Billing",
+    "Live Chicken Stock Management with Wastage Tracking",
+    "Separate Retail & Wholesale Pricing",
+    "English & Tamil Language Support",
+    "Customer Wise Wholesale Price Management",
+    "Customer Receipt Voucher",
+    "Customer Previous Transaction History in Billing Screen",
+    "Negative Stock Management",
+    "Day Closing with SMS & Email Notifications",
+    "Customer Credit Limit Management",
     ],
   },
   {
@@ -65,19 +63,18 @@ const TABS = [
     icon: <Package size={18} />,
     color: "#7C3AED",
     items: [
-      "Purchase Order Management",
-      "Purchase Excel Upload Options",
-      "Purchase Free Product Update",
-      "Batch Wise Stock Management",
-      "Purchase & Sale Entry Product Auto save Options",
-      "Product wise Stock Details History",
-      "Stock Adjustment Management",
-      "Physical Stock Management",
-      "Supplier Payment Due Date Management",
-      "Supplier Payment Ledger Management",
-      "Stock Inward / Outward / Transfer Entry",
-      "Customer Receipt & Due Date Management",
-      "Customer Receipt Ledger Management",
+      "Purchase Entry",
+    "Trip Wise Purchase Management",
+    "Supplier Payment Management",
+    "Supplier Payment Ledger Management",
+    "Stock Inward / Outward / Transfer Entry",
+    "Supplier Weekly Statement",
+    "Expense Entry & Bank Voucher",
+    "Cash Book & Bank Book",
+    "Staff Attendance Management",
+    "Stock Adjustment Management",
+    "Physical Stock Management",
+    "Customer Weekly Statement",
     ],
   },
   {
@@ -86,15 +83,18 @@ const TABS = [
     icon: <BarChart3 size={18} />,
     color: "#059669",
     items: [
-      "Basic Purchase & Sale & Stock Report",
-      "Product Wise Profit & Day Wise Profit",
-      "Modified Bill History & Cancel Bill Details Summary",
-      "Fast Moving & Slow Moving & Non Moving Product List",
-      "GST Sales & Purchase Excel File Generation",
-      "User Wise Privileges Rights & Cashier wise Sales Report",
-      "Daily Automatic Database Backup & Backup Upload Google Drive",
-      "POP Alert (Reorder Level, Expiry Date, Customer Due Payment)",
-      "Hourly Report | Reprint Bill Summary",
+      "Basic Purchase, Sale & Stock Reports",
+    "Customer & Supplier Statements",
+    "Customer Daily Transaction Statement",
+    "Supplier Daily Transaction Statement",
+    "Trip Wise Profit Report",
+    "Expense Reports",
+    "Cash Entry Report",
+    "Profit & Loss Report",
+    "Staff Attendance Report",
+    "Daily Automatic Database Backup",
+    "User Wise Privileges & Access Rights",
+    "Automatic Email, SMS & WhatsApp Notifications",
     ],
   },
 ];
@@ -164,7 +164,7 @@ export default function SupermarketPage() {
               style={{ marginLeft: 50}}
             >
               {/* Badge — matches HeroSection badge style */}
-              <motion.h1
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
@@ -181,20 +181,24 @@ export default function SupermarketPage() {
     display: "inline-block",
     animation: "pulse 2s infinite",
   }}
-/>{" "}
-GST Billing Software in Chennai
-</motion.h1>
+/>
+Chicken Billing Software
+</motion.div>
+
 {/* H1 */}
 <h1
   className="font-display font-extrabold mb-4"
   style={{
-    fontSize: "clamp(2rem, 2.5vw, 4rem)",
+    fontSize: "clamp(2rem, 2.5vw, 1rem)",
     lineHeight: 1.13,
     letterSpacing: "-0.02em",
     color: "#0F172A",
   }}
 >
-  Smart <span style={{ color: "#2563EB" }}>GST Billing & Invoice Software</span>
+  Smart Billing for{" "}
+  <span style={{ color: "#2563EB" }}>
+    Chicken & Meat Shops
+  </span>
 </h1>
 
 <p
@@ -203,14 +207,18 @@ GST Billing Software in Chennai
     marginBottom: 28,
     fontSize: "0.95rem",
     lineHeight: 1.75,
-    maxWidth: 620,
+    maxWidth: 520,
     marginLeft: "0%",
   }}
 >
   <strong style={{ color: "#0F172A", fontWeight: 700 }}>
-    Kassapos GST Billing & Invoice Software in Chennai
+    Kassapos Chicken Billing Software
   </strong>{" "}
-  a powerful POS solution for retailers, wholesalers, supermarkets, pharmacies, and growing businesses. Easily generate GST-compliant invoices, automate tax calculations, manage inventory, and speed up billing with barcode scanning. With cloud and offline billing, real-time reports, and local implementation and support in Chennai, KassaPOS helps businesses simplify operations, improve billing accuracy, and stay GST compliant.
+  is designed for modern chicken and meat shops to simplify daily
+  operations. Easily manage weight-based billing, barcode billing,
+  inventory, purchase tracking, customer management, GST invoicing,
+  digital payments, and real-time sales reports through one powerful
+  cloud-enabled billing solution.
 </p>
 
               {/* Quick features — adapted to light bg */}
@@ -352,7 +360,7 @@ onClick={openDemoModal}
               {!videoPlaying ? (
                 <div className="relative cursor-pointer" style={{ aspectRatio: "16/9", background: "#000" }} onClick={() => setVideoPlaying(true)}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img   src="/images/GSTBillingSoftware.webp"alt="Kassapos Supermarket POS Demo" style={{ width: "120%", height: "170%", objectFit: "cover", opacity: 0.82 }} />
+                  <img   src="/images/ChickenandMeetShop.webp"alt="Kassapos Supermarket POS Demo" style={{ width: "120%", height: "175%", objectFit: "cover", opacity: 0.82 }} />
                   <div className="absolute inset-0 flex items-center justify-center">
                     {/* <motion.div whileHover={{ scale: 1.1 }} style={{ width: 76, height: 76, borderRadius: "50%", background: "#FF0000", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 8px 32px rgba(255,0,0,0.6)",left: "clamp(0px, 6vw, 200px)", }}>
                       <Play size={30} fill="white" color="white" style={{ marginLeft: 4 }} />
@@ -389,24 +397,7 @@ onClick={openDemoModal}
                 <div style={{ aspectRatio: "16/9" }}>
                   <iframe width="100%" height="150%" src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1`} title="Kassapos Supermarket POS Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ display: "block" }} />
                 </div>
-//                 <div
-//   style={{
-//     width: "95%", // adjust pannunga
-//     marginLeft: "auto",
-//     aspectRatio: "16/9",
-//   }}
-// >
-//   <iframe
-//     width="100%"
-//     height="100%"
-//     src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1`}
-//     title="Kassapos Supermarket POS Demo"
-//     frameBorder="0"
-//     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//     allowFullScreen
-//     style={{ display: "block" }}
-//   />
-// </div>
+
               )}
             </motion.div>
             
@@ -423,18 +414,6 @@ onClick={openDemoModal}
       <section style={{ background: "#F4F7FF", padding: "0 0" }}>  
         <div className="container-xl" style={{ paddingLeft: 24, paddingRight: 24 }}>
 
-          {/* <motion.div
-            className="text-center mb-14"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.45, ease: EASE_EXPO }}
-          >
-            <h2 className="font-display font-bold text-slate-900 mb-2" style={{ fontSize: "clamp(1.6rem, 3vw, 2.3rem)" }}>
-            All-in-One Supermarket Management Solution
-            </h2>
-            <p className="text-slate-500 text-sm">Everything you need to streamline billing, inventory, purchasing, reporting, and customer management in one platform.</p>
-          </motion.div> */}
 
 <motion.div
   className="text-center mb-14"
@@ -443,10 +422,33 @@ onClick={openDemoModal}
   viewport={{ once: true }}
   transition={{ duration: 0.45, ease: EASE_EXPO }}
 >
+<SectionLabel className="mx-auto mb-4">
+  Chicken Shop Management Suite
+</SectionLabel>
 
-<SectionLabel className="mx-auto mb-4"> Warehouse Management Suite </SectionLabel> <h2 className="font-display font-bold text-slate-900 mb-4" style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.8rem)", lineHeight: 1.15, }} > Manage your entire{" "} <span className="gradient-text"> warehouse operations </span> <br /> from a single platform </h2> <p className="text-base text-slate-500 max-w-xl mx-auto" style={{ lineHeight: 1.7 }} > Simplify inventory tracking, warehouse management, stock transfers, purchase management, shipping, logistics, barcode scanning, reporting, and real-time inventory control with one powerful solution built for modern warehouses and distribution businesses. </p>
+<h2
+  className="font-display font-bold text-slate-900 mb-4 lg:whitespace-nowrap"
+  style={{
+    fontSize: "clamp(1.75rem, 3.5vw, 2.2rem)",
+    lineHeight: 1.15,
+  }}
+>
+  Manage your entire{" "}
+  <span className="gradient-text">
+    Chicken Shop Operations
+  </span> from a single platform
+</h2>
 
-
+<p
+  className="text-base text-slate-500 max-w-8xl mx-auto"
+  style={{ lineHeight: 1.7 }}
+>
+  Streamline weight-based billing, inventory management, purchase
+  tracking, supplier management, customer records, GST billing,
+  digital payments, analytics, and daily sales reporting with one
+  complete software solution built specifically for chicken and meat
+  retail businesses.
+</p>
 </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cloud Billing Software in Chennai | Online POS & Inventory Software | KassaPOS",
+  title: "Cloud Billing Software | KassaPOS",
   description:
-    "KassaPOS Cloud Billing Software in Chennai helps businesses manage online billing, GST invoicing, inventory, barcode billing and multi-branch operations with a secure cloud POS solution. Book your free demo today.",
+    "KassaPOS Cloud Billing Software helps businesses manage billing, inventory, sales, customer management, multi-branch operations, and real-time business reports from anywhere with secure cloud technology.",
 
   keywords: [
     "cloud billing software",
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Cloud Billing Software in Chennai | Online POS & Inventory Software",
+    title: "Cloud Billing Software | KassaPOS",
     description:
       "Modern Cloud POS Software with Online & Offline Billing, Multi-Branch Management, Inventory Control, Mobile Reports, Google Drive Backup, and Real-Time Business Analytics.",
-    url: "https://kassapos.in/products/cloud-billing-software",
+    url: "https://kassapos.com/products/cloud",
     siteName: "KassaPOS",
     images: [
       {
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Cloud Billing Software in Chennai | Online POS & Inventory Software | KassaPOS",
+    title: "Cloud Billing Software | KassaPOS",
     description:
-      "Cloud billing software with GST billing, inventory management, barcode billing and real-time reports.",
+      "Smart Cloud Billing Software with Online & Offline Billing, Multi-Branch Management, Inventory Tracking, Mobile Reports, and Business Analytics.",
     images: ["/images/CouldOfflineandOnlineBilling.webp"],
   },
 };

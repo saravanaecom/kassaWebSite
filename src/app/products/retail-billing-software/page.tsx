@@ -168,7 +168,7 @@ export default function SupermarketPage() {
               style={{ marginLeft: 50}}
             >
               {/* Badge — matches HeroSection badge style */}
-              <motion.div
+              <motion.h1
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
@@ -177,8 +177,8 @@ export default function SupermarketPage() {
                 style={{ background: "rgba(37,99,235,0.08)", color: "#2563EB", border: "1px solid rgba(37,99,235,0.18)" }}
               >
                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#2563EB", display: "inline-block", animation: "pulse 2s infinite" }} />
-                Retail Shop Billing Software
-              </motion.div>
+                Retail Shop Billing Software in Chennai 
+              </motion.h1>
 
               {/* H1 */}
               <h1
@@ -426,8 +426,8 @@ onClick={openDemoModal}
   viewport={{ once: true }}
   transition={{ duration: 0.45, ease: EASE_EXPO }}
 >
-  <SectionLabel className="mx-auto mb-4">
-  Retail Shop Billing Software
+  <SectionLabel as="h1" className="mx-auto mb-4">
+   Retail Shop Billing Software
   </SectionLabel>
 
   <h2
@@ -538,9 +538,9 @@ onClick={openDemoModal}
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{ background: "#EEF2FF" }}>
                 <ShoppingCart size={22} style={{ color: "#2563EB" }} />
               </div>
-              <h3 className="font-bold text-slate-900 mb-5" style={{ fontSize: "1.05rem" }}>
+              <h2 className="font-bold text-slate-900 mb-5" style={{ fontSize: "1.05rem" }}>
                 Why to Choose Kassapos?
-              </h3>
+              </h2>
               <div className="flex flex-col gap-3">
                 {WHY_CHOOSE.map((item, i) => (
                   <motion.div

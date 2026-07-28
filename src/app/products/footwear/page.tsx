@@ -24,19 +24,18 @@ const WA_SVG = ({ size = 17 }: { size?: number }) => (
   </svg>
 );
 
-const YOUTUBE_ID = "_tDs9grI1gE";
+const YOUTUBE_ID = "G_mvll26XZo";
 
 const QUICK_FEATURES = [
-  { label: "SerialNo Wise Billing",              color: "#2563EB" },
-  { label: "Serial Number Tracking",         color: "#7C3AED" },
-  { label: "Product Services Entry",        color: "#059669" },
-  { label: "Purchase History",            color: "#D97706" },
-  { label: "Einvoice,Eway Integration",   color: "#DC2626" },
-  { label: "WhatsApp Integration",         color: "#16A34A" },
-  { label: "Mobile Report App",            color: "#0284C7" },
-  { label: "Google Drive AutoBackup",      color: "#EA4335" },
-];
-
+  { label: "Barcode Billing",                 color: "#2563EB" },
+  { label: "Batch Wise Stock",                color: "#7C3AED" },
+  { label: "Brand, Size & Color Variants",    color: "#059669" },
+  { label: "Bill Hold Options",               color: "#D97706" },
+  { label: "Salesman Wise Reports",           color: "#DC2626" },
+  { label: "WhatsApp Integration",            color: "#16A34A" },
+  { label: "Mobile Report App",               color: "#0284C7" },
+  { label: "Google Drive Auto Backup",        color: "#EA4335" },
+]
 
 const TABS = [
   {
@@ -44,19 +43,20 @@ const TABS = [
     label: "Billing & Product",
     icon: <ShoppingCart size={18} />,
     color: "#2563EB",
-    items: [
-      "Serial Number Wise Billing",
-      "Serial Number Tracking",
+    items:  [
+      "Easy & Fast Billing & Barcode Printing",
+      "Auto Batch No Barcode Generation",
+      "Size, Color, Model & Brand Wise Billing",
+      "Salesman Wise Product Billing",
+      "English & Tamil Language Support",
+      "Tailoring Module",
+      "PCS × Meter Calculation",
       "Estimate Billing Options",
-      "Product Services Management",
-      "Multiple Company Management",
-      "Billing Printer A4 Invoice Format",
-      "Quotation Format | Delivery challan|Sale Order",
-      "Weighing Scale Integrate with Billing Screen",
-      "Cashier Wise Cash Denomination Counter Closing",
       "Negative Stock Management",
       "CRM Points & Loyalty Management",
       "Minimum Stock Alert in the Billing Screen",
+      "Cashier Wise Cash Denomination Counter Closing",
+      "Combo & Free Offers Management",
     ],
   },
   {
@@ -66,18 +66,18 @@ const TABS = [
     color: "#7C3AED",
     items: [
       "Purchase Order Management",
-      "Purchase Excel Upload Options",
-      "Purchase Free Product Update",
-      "Batch Wise Stock Management",
-      "Purchase & Sale Entry Product Auto save Options",
-      "Product wise Stock Details History",
-      "Stock Adjustment Management",
-      "Physical Stock Management",
-      "Supplier Payment Due Date Management",
-      "Supplier Payment Ledger Management",
-      "Stock Inward / Outward / Transfer Entry",
-      "Customer Receipt & Due Date Management",
-      "Customer Receipt Ledger Management",
+    "Purchase Excel Upload Options",
+    "Purchase Free Product Update",
+    "Batch Wise Stock Management",
+    "Purchase & Sale Entry Product Auto Save Options",
+    "Product Wise Stock Details History",
+    "Stock Adjustment Management",
+    "Physical Stock Management",
+    "Supplier Payment Due Date Management",
+    "Supplier Payment Ledger Management",
+    "Stock Inward / Outward / Transfer Entry",
+    "Customer Receipt & Due Date Management",
+    "Customer Receipt Ledger Management",
     ],
   },
   {
@@ -86,15 +86,16 @@ const TABS = [
     icon: <BarChart3 size={18} />,
     color: "#059669",
     items: [
-      "Basic Purchase & Sale & Stock Report",
-      "Product Wise Profit & Day Wise Profit",
-      "Modified Bill History & Cancel Bill Details Summary",
-      "Fast Moving & Slow Moving & Non Moving Product List",
-      "GST Sales & Purchase Excel File Generation",
-      "User Wise Privileges Rights & Cashier wise Sales Report",
-      "Daily Automatic Database Backup & Backup Upload Google Drive",
-      "POP Alert (Reorder Level, Expiry Date, Customer Due Payment)",
-      "Hourly Report | Reprint Bill Summary",
+     "Basic Purchase, Sale & Stock Reports",
+    "Salesman Commission Reports",
+    "Product Wise Profit & Day Wise Profit",
+    "Customer & Supplier Statement Reports",
+    "Ledger | Cash Book | Bank Book | Day Book",
+    "GST Sales & Purchase Excel File Generation",
+    "User Wise Privileges & Cashier Wise Sales Reports",
+    "Daily Automatic Database Backup & Google Drive Backup Upload",
+    "POP Alerts (Reorder Level, Expiry Date, Customer Due Payment)",
+    "Company Wise Profit & Loss Account",
     ],
   },
 ];
@@ -164,7 +165,7 @@ export default function SupermarketPage() {
               style={{ marginLeft: 50}}
             >
               {/* Badge — matches HeroSection badge style */}
-              <motion.h1
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
@@ -172,46 +173,25 @@ export default function SupermarketPage() {
                
                 style={{ background: "rgba(37,99,235,0.08)", color: "#2563EB", border: "1px solid rgba(37,99,235,0.18)" }}
               >
-<span
-  style={{
-    width: 6,
-    height: 6,
-    borderRadius: "50%",
-    background: "#2563EB",
-    display: "inline-block",
-    animation: "pulse 2s infinite",
-  }}
-/>{" "}
-GST Billing Software in Chennai
-</motion.h1>
-{/* H1 */}
-<h1
-  className="font-display font-extrabold mb-4"
-  style={{
-    fontSize: "clamp(2rem, 2.5vw, 4rem)",
-    lineHeight: 1.13,
-    letterSpacing: "-0.02em",
-    color: "#0F172A",
-  }}
->
-  Smart <span style={{ color: "#2563EB" }}>GST Billing & Invoice Software</span>
-</h1>
+                <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#2563EB", display: "inline-block", animation: "pulse 2s infinite" }} />
+                Footware Billing Software 
+              </motion.div>
 
-<p
-  style={{
-    color: "#64748B",
-    marginBottom: 28,
-    fontSize: "0.95rem",
-    lineHeight: 1.75,
-    maxWidth: 620,
-    marginLeft: "0%",
-  }}
->
-  <strong style={{ color: "#0F172A", fontWeight: 700 }}>
-    Kassapos GST Billing & Invoice Software in Chennai
-  </strong>{" "}
-  a powerful POS solution for retailers, wholesalers, supermarkets, pharmacies, and growing businesses. Easily generate GST-compliant invoices, automate tax calculations, manage inventory, and speed up billing with barcode scanning. With cloud and offline billing, real-time reports, and local implementation and support in Chennai, KassaPOS helps businesses simplify operations, improve billing accuracy, and stay GST compliant.
-</p>
+              {/* H1 */}
+              <h1
+                className="font-display font-extrabold mb-4"
+                 style={{ fontSize: "clamp(2rem, 2.5vw, 1rem)", lineHeight: 1.13, letterSpacing: "-0.02em", color: "#0F172A" }}
+              >
+                Step into {" "}
+                <span style={{ color: "#2563EB" }}>Smarter Retail</span> Management
+                
+              </h1>
+
+              <p style={{ color: "#64748B", marginBottom: 28, fontSize: "0.95rem", lineHeight: 1.75, maxWidth: 520 ,marginLeft: "0%"}}>
+              Accelerate billing  <strong style={{ color: "#0F172A", fontWeight: 700 }}>
+              track every size and style, manage inventory in real time, and gain valuable business
+  </strong> insights with an intelligent POS platform designed for growing footwear stores and retail chains.
+              </p>
 
               {/* Quick features — adapted to light bg */}
               {/* <div className="grid grid-cols-2 gap-2.5 mb-8">
@@ -352,7 +332,7 @@ onClick={openDemoModal}
               {!videoPlaying ? (
                 <div className="relative cursor-pointer" style={{ aspectRatio: "16/9", background: "#000" }} onClick={() => setVideoPlaying(true)}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img   src="/images/GSTBillingSoftware.webp"alt="Kassapos Supermarket POS Demo" style={{ width: "120%", height: "170%", objectFit: "cover", opacity: 0.82 }} />
+                  <img   src="/images/Footwear.webp"alt="Kassapos Supermarket POS Demo" style={{ width: "120%", height: "150%", objectFit: "cover", opacity: 0.82 }} />
                   <div className="absolute inset-0 flex items-center justify-center">
                     {/* <motion.div whileHover={{ scale: 1.1 }} style={{ width: 76, height: 76, borderRadius: "50%", background: "#FF0000", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 8px 32px rgba(255,0,0,0.6)",left: "clamp(0px, 6vw, 200px)", }}>
                       <Play size={30} fill="white" color="white" style={{ marginLeft: 4 }} />
@@ -389,24 +369,7 @@ onClick={openDemoModal}
                 <div style={{ aspectRatio: "16/9" }}>
                   <iframe width="100%" height="150%" src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1`} title="Kassapos Supermarket POS Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ display: "block" }} />
                 </div>
-//                 <div
-//   style={{
-//     width: "95%", // adjust pannunga
-//     marginLeft: "auto",
-//     aspectRatio: "16/9",
-//   }}
-// >
-//   <iframe
-//     width="100%"
-//     height="100%"
-//     src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1`}
-//     title="Kassapos Supermarket POS Demo"
-//     frameBorder="0"
-//     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//     allowFullScreen
-//     style={{ display: "block" }}
-//   />
-// </div>
+
               )}
             </motion.div>
             
@@ -443,10 +406,30 @@ onClick={openDemoModal}
   viewport={{ once: true }}
   transition={{ duration: 0.45, ease: EASE_EXPO }}
 >
+  <SectionLabel className="mx-auto mb-4">
+  Footwear Retail Management Suite
+  </SectionLabel>
 
-<SectionLabel className="mx-auto mb-4"> Warehouse Management Suite </SectionLabel> <h2 className="font-display font-bold text-slate-900 mb-4" style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.8rem)", lineHeight: 1.15, }} > Manage your entire{" "} <span className="gradient-text"> warehouse operations </span> <br /> from a single platform </h2> <p className="text-base text-slate-500 max-w-xl mx-auto" style={{ lineHeight: 1.7 }} > Simplify inventory tracking, warehouse management, stock transfers, purchase management, shipping, logistics, barcode scanning, reporting, and real-time inventory control with one powerful solution built for modern warehouses and distribution businesses. </p>
+  <h2
+    className="font-display font-bold text-slate-900 mb-4"
+    style={{
+      fontSize: "clamp(1.75rem, 3.5vw, 2.8rem)",
+      lineHeight: 1.15,
+    }}
+  >
+    Everything Your{" "}
+    <span className="gradient-text">
+    Footwear Store Needs in One POS
+    </span>
+    
+  </h2>
 
-
+  <p
+    className="text-base text-slate-500 max-w-5xl mx-auto"
+    style={{ lineHeight: 1.7 }}
+  >
+    Manage every size, style, and brand with ease. From fast billing and real-time inventory tracking to purchase management, customer loyalty programs, and business analytics, Kassapos provides everything needed to grow a successful footwear business.
+  </p>
 </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">

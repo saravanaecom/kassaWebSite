@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GST Billing & Invoice Software | KassaPOS",
+  title: "GST Billing Software in Chennai | GST POS & Billing Solution | KassaPOS",
   description:
-    "KassaPOS GST Billing & Invoice Software helps businesses create GST-compliant invoices, manage billing, inventory, customers, expenses, tax reports, e-Invoice, e-Way Bill, and business operations with ease.",
+    "KassaPOS GST Billing Software in Chennai helps businesses simplify GST invoicing, barcode billing, inventory management, e-Invoicing and sales reporting with an easy-to-use POS solution. Book your free demo today.",
 
   keywords: [
     "GST billing software",
@@ -19,17 +19,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "GST Billing & Invoice Software | KassaPOS",
+    title: "GST Billing Software in Chennai | GST POS & Billing Solution | KassaPOS",
     description:
-      "Complete GST Billing & Invoice Software with Inventory Management, e-Invoice, e-Way Bill, Customer Management, Reports and Business Automation.",
-    url: "https://kassapos.com/products/gst-billing-software",
+      "KassaPOS GST Billing Software in Chennai helps businesses simplify GST invoicing, barcode billing, inventory management, e-Invoicing and sales reporting.",
+    url: "https://www.kassapos.in/products/gst-billing-software",
     siteName: "KassaPOS",
     images: [
       {
         url: "/images/GSTBillingSoftware.webp",
         width: 1200,
         height: 630,
-        alt: "GST Billing & Invoice Software",
+        alt: "GST Billing & Invoice Software in Chennai ",
       },
     ],
     type: "website",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "GST Billing & Invoice Software | KassaPOS",
+    title: "GST Billing Software in Chennai | GST POS & Billing Solution | KassaPOS",
     description:
-      "Smart GST Billing & Invoice Software with e-Invoice, e-Way Bill, Inventory, Customer Management and Reports.",
+      "GST-ready billing software with inventory management, barcode billing and POS features for businesses in Chennai.",
     images: ["/images/GSTBillingSoftware.webp"],
   },
 };
