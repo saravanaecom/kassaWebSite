@@ -31,7 +31,7 @@ const monoFont = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kassapos.in"),
   title: {
-   default: "Kassapos — Billing Software in Chennai | Retail Billing Software in Chennai | GST POS Software | KassaPOS",
+   default: "Billing Software in Chennai | Retail Billing Software in Chennai ",
     template: "%s | Kassapos",
   },
   description:
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://kassapos.in",
     siteName: "Kassapos",
-    title: "Kassapos — Billing Software in Chennai | Retail Billing Software in Chennai | GST POS Software | KassaPOS",
+    title: "Billing Software in Chennai | Retail Billing Software in Chennai | GST POS Software | KassaPOS",
     description:
       "Looking for the best Billing Software in Chennai? KassaPOS provides GST billing, retail billing, barcode billing, inventory management, cloud and offline POS software for supermarkets, restaurants, pharmacies, textile stores and more. Book your free demo today.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kassapos — Billing Software with Free Trail & Download | Retail Billing Software in Chennai | Billing Software in Chennai | POS Software in Chennai – Kassapos",
-    description: "Trusted by 10000+ businesses across South India since 2008.",
+    title: "Billing Software in Chennai | Retail Billing Software in Chennai | GST POS Software | KassaPOS",
+    description: "Looking for the best Billing Software in Chennai? KassaPOS provides GST billing, retail billing, barcode billing, inventory management, cloud and offline POS software for supermarkets, restaurants, pharmacies, textile stores and more. Book your free demo today.",
   },
   robots: {
     index: true,
@@ -87,7 +87,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" as="image" href="/images/hero.webp" fetchPriority="high" />
       </head>
-      <body className="min-h-screen text-slate-900 font-sans antialiased overflow-x-hidden" style={{ backgroundColor: "#FFFFFF" }}>
+      <body suppressHydrationWarning className="min-h-screen text-slate-900 font-sans antialiased overflow-x-hidden" style={{ backgroundColor: "#FFFFFF" }}>
         <SplashScreen />
         <Providers>
           <Navbar />
