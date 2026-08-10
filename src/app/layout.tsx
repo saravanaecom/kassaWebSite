@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SplashScreen } from "@/components/SplashScreen";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import Script from "next/script";
 
 const displayFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -82,10 +83,28 @@ export default function RootLayout({
       suppressHydrationWarning
       style={{ backgroundColor: "#FFFFFF", width: "100%" }}
     >
+
+      
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" as="image" href="/images/hero.webp" fetchPriority="high" />
+        <Script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JBG1TTX0S7"
+    strategy="afterInteractive"
+  />
+
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JBG1TTX0S7');
+    `}
+  </Script>
+      
+      
       </head>
       <body suppressHydrationWarning className="min-h-screen text-slate-900 font-sans antialiased overflow-x-hidden" style={{ backgroundColor: "#FFFFFF" }}>
         <SplashScreen />
