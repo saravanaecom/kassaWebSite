@@ -13,7 +13,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         <Link href="/" className="flex items-center">
           <div className="bg-white rounded-xl px-2.5 py-1.5 inline-flex">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.webp"
               alt="Kassapos"
               width={150}
               height={38}

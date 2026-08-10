@@ -85,7 +85,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setSent(true);
-        window.location.href = "/thankyou";
+        window.location.href = "/thank-you";
       } else {
         console.error("Failed:", res.status);
       }
