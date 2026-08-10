@@ -69,7 +69,7 @@ export function SplashScreen() {
                 className="mb-1"
               >
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/logo.webp"
                   alt="KassaPOS"
                   width={340}
                   height={136}

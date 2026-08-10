@@ -40,14 +40,38 @@ const SvgLinkedin = () => (
 );
 
 const FOOTER_PRODUCTS = [
-  { label: "Supermarket POS", href: "/products/supermarket-billing-software" },
-  { label: "Retail Billing", href: "/products/retail-billing-software" },
-  { label: "Restaurant POS", href: "/products/restaurant-pos-software" },
-  { label: "Cloud Billing", href: "/products/cloud-billing-software" },
-  { label: "Textiles Software", href: "/products/textile-billing-software" },
-  { label: "Warehouse Management", href: "/products/warehouse-inventory-management-system-software" },
-  { label: "GST Billing", href: "/products/gst-billing-software" },
-  { label: "All Products →", href: "/products" },
+  {
+    label: "Supermarket Billing Software in Chennai",
+    href: "/products/supermarket-billing-software",
+  },
+  {
+    label: "Retail Billing Software in Chennai",
+    href: "/products/retail-billing-software",
+  },
+  {
+    label: "Online Billing Software in Chennai",
+    href: "/products/online-billing-software",
+  },
+  {
+    label: "Cloud Billing Software in Chennai",
+    href: "/products/cloud-billing-software",
+  },
+  {
+    label: "Textiles & Garments Billing Software in Chennai",
+    href: "/products/textile-billing-software",
+  },
+  {
+    label: "Warehouse Inventory Management System Software",
+    href: "/products/warehouse-inventory-management-system-software",
+  },
+  {
+    label: "GST Billing Software in Chennai",
+    href: "/products/gst-billing-software",
+  },
+  {
+    label: "All Products →",
+    href: "/products",
+  },
 ];
 
 const FOOTER_COMPANY = [
@@ -148,7 +172,7 @@ export function Footer() {
                 }}
               >
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/logo.webp"
                   alt="Kassapos"
                   width={220}
                   height={56}

@@ -149,7 +149,13 @@ const MEGA_MENU = [
   { id: "meat",      
    label: "Chicken & Meat Shop"  ,   
    items: [{ label: "Chicken & Meat Shop Software", 
-    href: "/products/chicken-shop-billing-software", icon: "🍗" },] },
+    href: "/products/chicken-shop-billing-software", icon: "🍗" },
+    {
+      label: "Best Billing Software",
+      href: "/products/best-billing-software-in-chennai",
+      icon: "🏪",
+    },
+  ] },
 
 ];
 
@@ -602,7 +608,7 @@ export function Navbar() {
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", minHeight: 66 }}>
           <Link href="/" style={{ textDecoration: "none" }}>
             <div style={{ background: "#fff", borderRadius: 10, padding: "4px 12px" }}>
-              <Image src="/images/logo.jpg" alt="Kassapos" width={140} height={38} style={{ height: 38, width: "auto", display: "block" }} priority />
+              <Image src="/images/logo.webp" alt="Kassapos" width={140} height={38} style={{ height: 38, width: "auto", display: "block" }} priority />
             </div>
           </Link>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>

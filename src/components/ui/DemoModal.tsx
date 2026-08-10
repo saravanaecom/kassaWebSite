@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Phone, MessageCircle, ArrowRight, CheckCircle, Calendar } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
+import { useRouter } from "next/navigation";
 
 const inputStyle: React.CSSProperties = {
   width: "100%",
@@ -25,6 +26,7 @@ export function openDemoModal() {
 }
 
 export function DemoModal() {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -75,7 +77,7 @@ export function DemoModal() {
       );
 
       if (res.ok) {
-        setSubmitted(true);
+        router.push("/thank-you");
       } else {
         console.error("Demo request failed", res.status);
       }
@@ -194,7 +196,7 @@ export function DemoModal() {
                   </span>
                 </div>
 
-                {/* <h2
+                <h2
                   style={{
                     color: "#FFFFFF",
                     fontSize: "1.15rem",
@@ -204,26 +206,11 @@ export function DemoModal() {
                     marginBottom: 4,
                   }}
                 >
-                  Book Your Free Demo
+                  Book a Free Demo
                 </h2>
                 <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.78rem", lineHeight: 1.5 }}>
-                  Our expert will call &amp; show Kassapos live — customised for your business.
-                </p> */}
-                <h2
-  style={{
-    color: "#FFFFFF",
-    fontSize: "1.15rem",
-    fontWeight: 800,
-    lineHeight: 1.2,
-    letterSpacing: "-0.02em",
-    marginBottom: 4,
-  }}
->
-  Book a Free Demo
-</h2>
-<p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.78rem", lineHeight: 1.5 }}>
-  Schedule a free demo to see how KassaPOS can streamline billing and inventory management.
-</p>
+                  Schedule a free demo to see how KassaPOS can streamline billing and inventory management.
+                </p>
 
                 {/* Trust pills */}
                 <div style={{ display: "flex", gap: 6, marginTop: 10, flexWrap: "wrap" }}>
