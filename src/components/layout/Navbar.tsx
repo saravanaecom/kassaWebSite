@@ -47,28 +47,33 @@ const NAV_LINKS = [
   { label: "About Us",     href: "/about",    Icon: User,     hasDropdown: false },
   { label: "Products",     href: "/products", Icon: Package,  hasDropdown: true  },
   { label: "Features",     href: "/features", Icon: Settings, hasDropdown: false },
-  // { label: "Sales Region", href: "/contact",  Icon: MapPin,   hasDropdown: false },
+  { label: "Sales Region", href: "/contact",  Icon: MapPin,   hasDropdown: true  },
   { label: "Blog",         href: "/blog",     Icon: FileText, hasDropdown: false },
   { label: "Contact Us",   href: "/contact",  Icon: Mail,     hasDropdown: false },
 ];
 
-const MEGA_MENU = [
+
+type SubMenuItem = { label: string; href: string; icon?: string };
+type MenuCategory = { id: string; label: string; icon?: string; items: SubMenuItem[] };
+
+const MEGA_MENU: MenuCategory[] = [
+  
   { id: "retail",     label: "Retail Software",       
-   items: [{ label: "Supermarket Shop", href: "/products/supermarket-billing-software", icon: "🏪" },
-    { label: "Grocery Shop", href: "/products/grocery-billing-software", icon: "🛒" ,},
-    { label: "Retail Shop", href: "/products/retail-billing-software", icon: "🛍️" ,},
-    { label: "Vegetable & Fruits Shop", href: "/products/vegetable-fruit-billing-software", icon: "🥬", },
-    { label: "Garments & Textiles Shop", href: "/products/textile-billing-software", icon: "👗", },
-    { label: "Footwear Shop", href: "/products/footwear-billing-software", icon: "👟", },
-    {label: "Mobile & Computer Shop", href: "/products/mobile-computer-shop-billing-software",icon: "📱",},
+   items: [{ label: "Supermarket Shop", href: "/products/supermarket-billing-software-in-Chennai", icon: "🏪" },
+    { label: "Grocery Shop", href: "/products/grocery-billing-software-in-Chennai", icon: "🛒" ,},
+    { label: "Retail Shop", href: "/products/retail-billing-software-in-Chennai", icon: "🛍️" ,},
+    { label: "Vegetable & Fruits Shop", href: "/products/vegetable-fruit-billing-software-in-Chennai", icon: "🥬", },
+    { label: "Garments & Textiles Shop", href: "/products/textile-billing-software-in-Chennai", icon: "👗", },
+    { label: "Footwear Shop", href: "/products/footwear-billing-software-in-Chennai", icon: "👟", },
+    {label: "Mobile & Computer Shop", href: "/products/mobile-computer-shop-billing-software-in-Chennai",icon: "📱",},
    
-    { label: "Spa & Salon Shop", href: "/products/spa-salon-billing-software", icon: "💆" ,},     
+    { label: "Spa & Salon Shop", href: "/products/spa-salon-billing-software-in-Chennai", icon: "💆" ,},     
     ] },
     {
       id: "WholeSale",  label: "Distribution Software", 
-      items:[{label: "WholeSale & Agencies Shop", href: "/products/agency-billing-software", icon: "📦"},
-        { label: "Home Appliances Shop", href: "/products/home-appliances-store-billing-software", icon: "🏠" },
-        { label: "Electrical & Electronics Shop ", href: "/products/electrical-electronics-shop-billing-software", icon: "⚡",  },
+      items:[{label: "WholeSale & Agencies Shop", href: "/products/agency-billing-software-in-Chennai", icon: "📦"},
+        { label: "Home Appliances Shop", href: "/products/home-appliances-store-billing-software-in-Chennai", icon: "🏠" },
+        { label: "Electrical & Electronics Shop ", href: "/products/electrical-electronics-shop-billing-software-in-Chennai", icon: "⚡",  },
       ]
     },
     {
@@ -77,53 +82,56 @@ const MEGA_MENU = [
       items: [
         {
           label: "Hardware & Plywood Software",
-          href: "/products/hardware-billing-software",
+          href: "/products/hardware-billing-software-in-Chennai",
           icon: "🔧",
         },
         {
           label: "Automobile & Spares Software",
-          href: "/products/automobile-billing-software",
+          href: "/products/automobile-billing-software-in-Chennai",
           icon: "🚗",
         },
         {
           label: "GST Billing Software",
-          href: "/products/gst-billing-software",
+          href: "/products/gst-billing-software-in-Chennai",
           icon: "📋",
         },
         {
           label: "Warehouse Inventory Management System Software",
-          href: "/products/warehouse-inventory-management-system-software",
+          href: "/products/warehouse-inventory-management-system-software-in-Chennai",
           icon: "🏬",
         },
         {
           label: "Hotel Billing Software",
-          href: "/products/hotel-billing-software",
+          href: "/products/hotel-billing-software-in-Chennai",
           icon: "🏨",
         },
         {
           label: "Mobile Shop Billing Software",
-          href: "/products/mobile-shop-billing-software",
+          href: "/products/mobile-shop-billing-software-in-Chennai",
           icon: "📱",
         },
         {
           label: "Online Billing Software",
-          href: "/products/online-billing-software",
+          href: "/products/online-billing-software-in-Chennai",
           icon: "☁️",
         },
       ],
     },
-    { id: "cloud",      label: "Cloud Billing Software", items: [{ label: "Cloud Offline & Online Billing Software", href: "/products/cloud-billing-software", icon: "☁️" },{ label: "Web-Based Billing Softwere", href: "/products/web-billing", icon: "🌐" },{ label: "Warehouse Management Billing Software", href: "/products/warehouse", icon: "🏭" }] },
+    { id: "cloud",      label: "Cloud Billing Software", items: 
+      [{ label: "Cloud Offline & Online Billing Software", href: "/products/cloud-billing-software-in-Chennai", icon: "☁️" },
+      { label: "Web-Based Billing Softwere", href: "/products/web-billing-in-Chennai", icon: "🌐" },
+      { label: "Warehouse Management Billing Software", href: "/products/warehouse-billing-in-Chennai", icon: "🏭" }] },
   {
     id: "restaurant",
     label: "Restaurant Software",
     items: [
-      { label: "Restaurant POS Software ", href: "/products/restaurant-pos-software", icon: "🍽️" },
-      { label: "Bakery & Sweets Shop", href: "/products/bakery-billing-software", icon: "🥐" },
-      { label: "Cafe Billing", href: "/products/cafe", icon: "☕" },
-      { label: "Bar & Liquor Software", href: "/products/bar", icon: "🍺" },
-      { label: "Food Court Software", href: "/products/food-court", icon: "🍜" },
-      { label: "Ice Cream Shop", href: "/products/ice-cream", icon: "🍦" },
-      { label: "Juice Shop Billing Software", href: "/products/juiceshopbillingsoftware", icon: "🧃" },
+      { label: "Restaurant POS Software ", href: "/products/restaurant-pos-software-in-Chennai", icon: "🍽️" },
+      { label: "Bakery & Sweets Shop", href: "/products/bakery-billing-software-in-Chennai", icon: "🥐" },
+      { label: "Cafe Billing", href: "/products/cafe-software-in-Chennai", icon: "☕" },
+      { label: "Bar & Liquor Software", href: "/products/bar-software-in-Chennai", icon: "🍺" },
+      { label: "Food Court Software", href: "/products/food-court-software-in-Chennai", icon: "🍜" },
+      { label: "Ice Cream Shop", href: "/products/ice-cream-software-in-Chennai", icon: "🍦" },
+      { label: "Juice Shop Billing Software", href: "/products/juiceshopbillingsoftware-software-in-Chennai", icon: "🧃" },
     ],
   },
   
@@ -135,12 +143,12 @@ const MEGA_MENU = [
 
       {
         label: "Restaurant Mobile Billing Software",
-        href: "/products/restaurant-mobile-billing",
+        href: "/products/restaurant-mobile-billing-in-Chennai",
         icon: "🍴",
       },
       {
         label: "Retail Mobile Billing Software",
-        href: "/products/retail-mobile-billing",
+        href: "/products/retail-mobile-billing-in-Chennai",
         icon: "🏪",
       },
     ],
@@ -149,15 +157,191 @@ const MEGA_MENU = [
   { id: "meat",      
    label: "Chicken & Meat Shop"  ,   
    items: [{ label: "Chicken & Meat Shop Software", 
-    href: "/products/chicken-shop-billing-software", icon: "🍗" },
-    {
-      label: "Best Billing Software",
-      href: "/products/best-billing-software-in-chennai",
-      icon: "🏪",
-    },
+    href: "/products/chicken-shop-billing-software-in-Chennai", icon: "🍗" },
+    // {
+    //   label: "Best Billing Software",
+    //   href: "/products/best-billing-software-in-chennai",
+    //   icon: "🏪",
+    // },
   ] },
 
 ];
+
+
+const REGION_MENU: MenuCategory[] = [
+  {
+    id: "sivakasi",
+    label: "Sivakasi",
+    icon: "📍",
+    items: [
+      {
+        label: "Billing Software in Sivakasi",
+        href: "/region/billing-software-in-sivakasi",
+        icon: "🧾",
+      },
+      {
+        label: "Retail Billing Software in Sivakasi",
+        href: "/region/retail-billing-software-in-sivakasi",
+        icon: "🛍️",
+      },
+      {
+        label: "Cloud Billing Software in Sivakasi",
+        href: "/region/cloud-billing-software-in-sivakasi",
+        icon: "☁️",
+      },
+      {
+        label: "Mobile Billing Software in Sivakasi",
+        href: "/region/mobile-billing-software-in-sivakasi",
+        icon: "📱",
+      },
+      {
+        label: "SuperMarket Billing Software in Sivakasi",
+        href: "/region/supermarket-billing-software-in-sivakasi",
+        icon: "🏪",
+      },
+      {
+        label: "GST Billing Software in Sivakasi",
+        href: "/region/gst-billing-software-in-sivakasi",
+        icon: "📋",
+      },
+    ],
+  },
+
+  {
+    id: "madurai",
+    label: "Madurai",
+    icon: "📍",
+    items: [
+      {
+        label: "Billing Software in Madurai",
+        href: "/region/billing-software-in-madurai",
+        icon: "🧾",
+      },
+      {
+        label: "Retail Billing Software in Madurai",
+        href: "/region/retail-billing-software-in-madurai",
+        icon: "🛍️",
+      },
+      {
+        label: "Cloud Billing Software in Madurai",
+        href: "/region/cloud-billing-software-in-madurai",
+        icon: "☁️",
+      },
+      {
+        label: "Mobile Billing Software in Madurai",
+        href: "/region/mobile-billing-software-in-madurai",
+        icon: "📱",
+      },
+      {
+        label: "SuperMarket Billing Software in Madurai",
+        href: "/region/supermarket-billing-software-in-madurai",
+        icon: "🏪",
+      },
+      {
+        label: "GST Billing Software in Madurai",
+        href: "/region/gst-billing-software-in-madurai",
+        icon: "📋",
+      },
+    ],
+  },
+
+  {
+    id: "trichy",
+    label: "Trichy",
+    icon: "📍",
+    items: [
+      {
+        label: "Billing Software in Trichy",
+        href: "/region/billing-software-in-trichy",
+        icon: "🧾",
+      },
+      {
+        label: "Retail Billing Software in Trichy",
+        href: "/region/retail-billing-software-in-trichy",
+        icon: "🛍️",
+      },
+      {
+        label: "Cloud Billing Software in Trichy",
+        href: "/region/cloud-billing-software-in-trichy",
+        icon: "☁️",
+      },
+      {
+        label: "Mobile Billing Software in Trichy",
+        href: "/region/mobile-billing-software-in-trichy",
+        icon: "📱",
+      },
+      {
+        label: "SuperMarket Billing Software in Trichy",
+        href: "/region/supermarket-billing-software-in-trichy",
+        icon: "🏪",
+      },
+      {
+        label: "GST Billing Software in Trichy",
+        href: "/region/gst-billing-software-in-trichy",
+        icon: "📋",
+      },
+    ],
+  },
+
+  {
+    id: "coimbatore",
+    label: "Coimbatore",
+    icon: "📍",
+    items: [
+      {
+        label: "Billing Software in Coimbatore",
+        href: "/region/billing-software-in-coimbatore",
+        icon: "🧾",
+      },
+      {
+        label: "Retail Billing Software in Coimbatore",
+        href: "/region/retail-billing-software-in-coimbatore",
+        icon: "🛍️",
+      },
+      {
+        label: "Cloud Billing Software in Coimbatore",
+        href: "/region/cloud-billing-software-in-coimbatore",
+        icon: "☁️",
+      },
+      {
+        label: "Mobile Billing Software in Coimbatore",
+        href: "/region/mobile-billing-software-in-coimbatore",
+        icon: "📱",
+      },
+      {
+        label: "SuperMarket Billing Software in Coimbatore",
+        href: "/region/supermarket-billing-software-in-coimbatore",
+        icon: "🏪",
+      },
+      {
+        label: "GST Billing Software in Coimbatore",
+        href: "/region/gst-billing-software-in-coimbatore",
+        icon: "📋",
+      },
+    ],
+  },
+];
+
+/* Config that lets a single dropdown renderer serve BOTH the Products
+   mega-menu and the Sales Region menu, using the same layout/behaviour. */
+const DROPDOWN_CONFIG: Record<
+  string,
+  { data: MenuCategory[]; footerNote: string; viewAllHref: string; viewAllLabel: string }
+> = {
+  Products: {
+    data: MEGA_MENU,
+    footerNote: "20+ industry-specific solutions",
+    viewAllHref: "/products",
+    viewAllLabel: "View all",
+  },
+  "Sales Region": {
+    data: REGION_MENU,
+    footerNote: `${REGION_MENU.length}+ regions we serve`,
+    viewAllHref: "/contact",
+    viewAllLabel: "View all",
+  },
+};
+
 
 /* ══════════════════════════ COMPONENT ══════════════════════════ */
 export function Navbar() {
@@ -165,6 +349,7 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdown,   setDropdown]   = useState<string | null>(null);
   const [megaCat,    setMegaCat]    = useState(MEGA_MENU[0].id);
+  const [regionCat,  setRegionCat]  = useState(REGION_MENU[0].id);
   const navRef     = useRef<HTMLElement>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -221,9 +406,6 @@ export function Navbar() {
                 <polygon points="18,8.5 20,13.5 25.5,13.8 21.3,17.5 22.8,22.8 18,19.8 13.2,22.8 14.7,17.5 10.5,13.8 16,13.5" fill="#FBBF24" />
                 <path d="M11 27L7 39L18 32.5L29 39L25 27" stroke="#FBBF24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              {/* <span style={{ color: "#fff", fontSize: 13, fontWeight: 500, whiteSpace: "nowrap" }}>
-                <strong style={{ fontWeight: 700 }}>17+ Years</strong> of Excellence in Software Solutions
-              </span> */}
 <span
   style={{
     color: "#fff",
@@ -397,6 +579,10 @@ export function Navbar() {
             >
               {NAV_LINKS.map(({ label, href, Icon, hasDropdown }) => {
                 const active = pathname === href || (href !== "/" && pathname?.startsWith(href));
+                const config = DROPDOWN_CONFIG[label];
+                const currentCat    = label === "Products" ? megaCat   : regionCat;
+                const setCurrentCat = label === "Products" ? setMegaCat : setRegionCat;
+
                 return (
                   <div
                     key={label}
@@ -465,9 +651,9 @@ export function Navbar() {
                       </div>
                     </Link>
 
-                    {/* ── Mega Menu Dropdown ── */}
+                    {/* ── Dropdown (Mega Menu for Products, Region Menu for Sales Region) ── */}
                     <AnimatePresence>
-                      {hasDropdown && dropdown === label && (
+                      {hasDropdown && config && dropdown === label && (
                         <motion.div
                           initial={{ opacity: 0, y: 12, scale: 0.97 }}
                           animate={{ opacity: 1, y: 0,  scale: 1    }}
@@ -490,12 +676,12 @@ export function Navbar() {
                           <div style={{ display: "flex" }}>
                             {/* Left: category list */}
                             <div style={{ width: 250, flexShrink: 0, borderRight: "1px solid #F1F5F9", padding: "12px 8px", background: "#FAFBFF" }}>
-                              {MEGA_MENU.map(cat => {
-                                const isCat = megaCat === cat.id;
+                              {config.data.map(cat => {
+                                const isCat = currentCat === cat.id;
                                 return (
                                   <div
                                     key={cat.id}
-                                    onMouseEnter={() => setMegaCat(cat.id)}
+                                    onMouseEnter={() => setCurrentCat(cat.id)}
                                     style={{
                                       display: "flex", alignItems: "center", justifyContent: "space-between",
                                       padding: "10px 14px", borderRadius: 10, cursor: "pointer",
@@ -504,7 +690,12 @@ export function Navbar() {
                                       marginBottom: 3, transition: "all .14s ease",
                                     }}
                                   >
-                                    <span style={{ fontSize: 13.5, fontWeight: isCat ? 700 : 500, color: isCat ? "#0c2778" : "#374151" }}>{cat.label}</span>
+                                    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                                      {"icon" in cat && cat.icon && (
+                                        <span style={{ fontSize: "1rem" }}>{cat.icon as string}</span>
+                                      )}
+                                      <span style={{ fontSize: 13.5, fontWeight: isCat ? 700 : 500, color: isCat ? "#0c2778" : "#374151" }}>{cat.label}</span>
+                                    </span>
                                     <ChevronRight size={13} style={{ color: isCat ? "#0A58FF" : "#CBD5E1" }} />
                                   </div>
                                 );
@@ -512,7 +703,7 @@ export function Navbar() {
                             </div>
                             {/* Right: items */}
                             <div style={{ flex: 1, padding: "12px 8px" }}>
-                              {MEGA_MENU.find(c => c.id === megaCat)?.items.map(item => (
+                              {config.data.find(c => c.id === currentCat)?.items.map(item => (
                                 <Link key={item.href} href={item.href} style={{ textDecoration: "none", display: "block" }}>
                                   <div
                                     style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 14px", borderRadius: 10, marginBottom: 3, transition: "background .12s ease" }}
@@ -527,9 +718,9 @@ export function Navbar() {
                             </div>
                           </div>
                           <div style={{ padding: "10px 20px", borderTop: "1px solid #F1F5F9", display: "flex", justifyContent: "space-between", alignItems: "center", background: "#FAFBFF" }}>
-                            <span style={{ fontSize: 12, color: "#94A3B8" }}>20+ industry-specific solutions</span>
-                            <Link href="/products" style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 12.5, color: "#0A58FF", fontWeight: 600, textDecoration: "none" }}>
-                              View all <ArrowRight size={12} />
+                            <span style={{ fontSize: 12, color: "#94A3B8" }}>{config.footerNote}</span>
+                            <Link href={config.viewAllHref} style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 12.5, color: "#0A58FF", fontWeight: 600, textDecoration: "none" }}>
+                              {config.viewAllLabel} <ArrowRight size={12} />
                             </Link>
                           </div>
                         </motion.div>

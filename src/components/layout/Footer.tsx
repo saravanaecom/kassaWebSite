@@ -42,31 +42,35 @@ const SvgLinkedin = () => (
 const FOOTER_PRODUCTS = [
   {
     label: "Supermarket Billing Software in Chennai",
-    href: "/products/supermarket-billing-software",
+    href: "/products/supermarket-billing-software-in-Chennai",
   },
   {
     label: "Retail Billing Software in Chennai",
-    href: "/products/retail-billing-software",
+    href: "/products/retail-billing-software-in-Chennai",
   },
   {
     label: "Online Billing Software in Chennai",
-    href: "/products/online-billing-software",
+    href: "/products/online-billing-software-in-Chennai",
   },
   {
     label: "Cloud Billing Software in Chennai",
-    href: "/products/cloud-billing-software",
+    href: "/products/cloud-billing-software-in-Chennai",
   },
   {
     label: "Textiles & Garments Billing Software in Chennai",
-    href: "/products/textile-billing-software",
+    href: "/products/textile-billing-software-in-Chennai",
   },
   {
     label: "Warehouse Inventory Management System Software",
-    href: "/products/warehouse-inventory-management-system-software",
+    href: "/products/warehouse-inventory-management-system-software-in-Chennai",
   },
   {
     label: "GST Billing Software in Chennai",
-    href: "/products/gst-billing-software",
+    href: "/products/gst-billing-software-in-Chennai",
+  },
+  {
+    label: "Best Billing Software in Chennai",
+    href: "/best-billing-software-in-chennai",
   },
   {
     label: "All Products →",
