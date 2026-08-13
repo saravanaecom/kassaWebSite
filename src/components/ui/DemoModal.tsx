@@ -77,6 +77,14 @@ export function DemoModal() {
       );
 
       if (res.ok) {
+        setSubmitted(false);
+        setOpen(false);
+        setForm({
+          name: "",
+          phone: "",
+          business: "",
+        });
+      
         router.push("/thank-you");
       } else {
         console.error("Demo request failed", res.status);
