@@ -3,7 +3,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

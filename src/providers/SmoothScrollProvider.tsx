@@ -1,33 +1,55 @@
 "use client";
 
 import { useEffect } from "react";
-import Lenis from "lenis";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// Smooth scrolling is a desktop nicety. Load Lenis + GSAP lazily, after the page
+// is idle, and only for mouse/trackpad users, so phones never download or run it.
 export function SmoothScrollProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const lenis = new Lenis({
-      duration: 1.4,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      touchMultiplier: 2,
-    });
+    let cancelled = false;
+    let cleanup: (() => void) | undefined;
 
-    lenis.on("scroll", () => ScrollTrigger.update());
+    const start = async () => {
+      const [{ default: Lenis }, { gsap }, { ScrollTrigger }] = await Promise.all([
+        import("lenis"),
+        import("gsap"),
+        import("gsap/ScrollTrigger"),
+      ]);
+      if (cancelled) return;
 
-    const raf = (time: number) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+      gsap.registerPlugin(ScrollTrigger);
+
+      const lenis = new Lenis({
+        duration: 1.4,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+        touchMultiplier: 2,
+      });
+
+      lenis.on("scroll", () => ScrollTrigger.update());
+
+      let rafId = 0;
+      const raf = (time: number) => {
+        lenis.raf(time);
+        rafId = requestAnimationFrame(raf);
+      };
+      rafId = requestAnimationFrame(raf);
+
+      cleanup = () => {
+        cancelAnimationFrame(rafId);
+        lenis.destroy();
+      };
     };
 
-    const rafId = requestAnimationFrame(raf);
+    const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 1500));
+    idle(() => { void start(); });
 
     return () => {
-      cancelAnimationFrame(rafId);
-      lenis.destroy();
+      cancelled = true;
+      cleanup?.();
     };
   }, []);
 

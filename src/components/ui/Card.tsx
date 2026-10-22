@@ -3,7 +3,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MotionDiv = motion.div as any;
 

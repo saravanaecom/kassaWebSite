@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import { X, Phone, MessageCircle, ArrowRight, CheckCircle, Calendar } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
-import { useRouter } from "next/navigation";
 
 const inputStyle: React.CSSProperties = {
   width: "100%",
@@ -26,7 +25,6 @@ export function openDemoModal() {
 }
 
 export function DemoModal() {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -77,15 +75,7 @@ export function DemoModal() {
       );
 
       if (res.ok) {
-        setSubmitted(false);
-        setOpen(false);
-        setForm({
-          name: "",
-          phone: "",
-          business: "",
-        });
-      
-        router.push("/thank-you");
+        setSubmitted(true);
       } else {
         console.error("Demo request failed", res.status);
       }
@@ -214,15 +204,15 @@ export function DemoModal() {
                     marginBottom: 4,
                   }}
                 >
-                  Book a Free Demo
+                  Book Your Free Demo
                 </h2>
                 <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.78rem", lineHeight: 1.5 }}>
-                  Schedule a free demo to see how KassaPOS can streamline billing and inventory management.
+                  Our expert will call &amp; show Kassapos live — customised for your business.
                 </p>
 
                 {/* Trust pills */}
                 <div style={{ display: "flex", gap: 6, marginTop: 10, flexWrap: "wrap" }}>
-                  {["30-min session", "credit card", "Tamil support"].map((tag) => (
+                  {["30-min session", "No credit card", "Tamil support"].map((tag) => (
                     <span
                       key={tag}
                       style={{

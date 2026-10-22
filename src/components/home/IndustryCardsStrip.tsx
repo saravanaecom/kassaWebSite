@@ -2,7 +2,7 @@
 
 import { useRef, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import {
   ShoppingCart, Utensils, Pill, Smartphone,
   Scissors, Cookie, Wrench, Sparkles,
@@ -10,6 +10,7 @@ import {
   Cloud, ChevronLeft, ChevronRight,
 } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
+import { productHref } from "@/lib/constants";
 
 const CARDS = [
   { id: "supermarket",     label: "Supermarket",        color: "#2563EB", desc: "Real-Time Inventory Intelligence" },
@@ -209,7 +210,7 @@ export function IndustryCardsStrip() {
               }}
             >
               <Sparkles size={11} color="#F59E0B" />
-              <h2>16+ Industries We Serve</h2>
+              16+ Industries We Serve
               <Sparkles size={11} color="#F59E0B" />
             </div>
 
@@ -305,7 +306,7 @@ export function IndustryCardsStrip() {
                   </p>
 
                   <Link
-                    href={`/products/${card.id}`}
+                    href={productHref(card.id)}
                     className="inline-flex items-center justify-center rounded-lg text-white font-semibold transition-all hover:opacity-90"
                     style={{
                       background: "#0F1E4A",
@@ -315,7 +316,7 @@ export function IndustryCardsStrip() {
                       letterSpacing: "0.01em",
                     }}
                   >
-                    Learn More
+                    Learn More<span className="sr-only"> about {card.label} billing software</span>
                   </Link>
                 </motion.div>
               ))}

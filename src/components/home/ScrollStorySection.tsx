@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import {
-  motion,
+  m as motion,
   useScroll,
   useTransform,
   MotionValue,

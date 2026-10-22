@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import {
   Phone, Mail, MapPin, Clock, MessageCircle,
   Send, CheckCircle2, ArrowRight,
@@ -85,7 +85,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setSent(true);
-        window.location.href = "/thank-you";
+        window.location.href = "/thankyou";
       } else {
         console.error("Failed:", res.status);
       }

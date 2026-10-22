@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 
 const CLIENTS = [
   { src: "/clients/BALAJI_IYANGAR _BACKERY.webp", alt: "Billing Software in Chennai" },
@@ -114,7 +114,7 @@ export function ClientsSection() {
             {DOUBLED.map((client, i) => (
               <div key={i} className="logo-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={client.src} alt={client.alt} className="logo-img" />
+                <img loading="lazy" decoding="async" width={170} height={76} src={client.src} alt={client.alt} className="logo-img" />
               </div>
             ))}
           </motion.div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import {
   Search, Plus, Phone, MessageCircle, Star, ShoppingBag,
   TrendingUp, Download, X, ChevronRight, Gift

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Phone, ShieldCheck, Clock, HeadphonesIcon } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";

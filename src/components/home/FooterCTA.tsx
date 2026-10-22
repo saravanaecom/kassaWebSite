@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { openDemoModal } from "@/components/ui/DemoModal";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { Play, CheckCircle2 } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
 
@@ -36,7 +36,7 @@ export function FooterCTA() {
     >
       {/* Background image */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <img loading="lazy" decoding="async"
         src="/Footer.webp"
         alt="Billing Software in Chennai"
         aria-hidden

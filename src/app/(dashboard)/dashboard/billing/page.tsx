@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import { Search, Plus, Minus, X, Printer, MessageCircle, CreditCard, Banknote, Smartphone, CheckCircle, Trash2 } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
 

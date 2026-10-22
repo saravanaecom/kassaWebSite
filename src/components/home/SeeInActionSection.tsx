@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { CheckCircle2, Play, ArrowRight } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { EASE_EXPO } from "@/lib/animations";

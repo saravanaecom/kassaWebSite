@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, CheckCircle2,
   ShoppingCart, ShoppingBag, Utensils, Cloud, Scissors,
@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { INDUSTRIES } from "@/lib/constants";
+import { INDUSTRIES, productHref } from "@/lib/constants";
 import { EASE_EXPO } from "@/lib/animations";
 
 /* ── Icon resolver ── */
@@ -364,7 +364,7 @@ export function IndustrySection() {
                 <div className="flex items-center justify-between pt-4 border-t border-slate-100">
                   <p className="text-xs text-slate-400">+{Math.max(0, 8 - features.length)} more features in full version</p>
                   <Link
-                    href={`/products/${activeIndustry}`}
+                    href={productHref(activeIndustry)}
                     className="inline-flex items-center gap-1.5 text-sm font-semibold transition-all hover:gap-2.5"
                     style={{ color: active.color }}
                   >

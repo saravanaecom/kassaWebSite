@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import {
   BarChart3, Package, Users, TrendingUp, Bell, Search,
   ArrowUpRight, ArrowDownRight, Zap, Wifi, ChevronRight,
@@ -410,10 +410,11 @@ export function DashboardPreview() {
                         <button
                           key={tab.id}
                           onClick={() => setActiveTab(tab.id)}
+                          aria-label={tab.label}
                           className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-[11px] font-medium transition-all"
                           style={{
                             background: activeTab === tab.id ? "rgba(37,99,235,0.08)" : "transparent",
-                            color: activeTab === tab.id ? "#2563EB" : "#94A3B8",
+                            color: activeTab === tab.id ? "#2563EB" : "#64748B",
                           }}
                         >
                           {tab.icon}

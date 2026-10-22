@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import Image from "next/image";
 import { Quote, Building2, Users, Award } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";

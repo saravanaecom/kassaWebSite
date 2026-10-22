@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { Check, X, Sparkles, ArrowRight, Phone, MessageCircle, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { SectionLabel } from "@/components/ui/SectionLabel";

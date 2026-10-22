@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { TESTIMONIALS } from "@/lib/constants";
@@ -59,9 +59,11 @@ function TestimonialCard({ item }: { item: (typeof TESTIMONIALS)[0] }) {
             </p>
           </div>
 
-          <img
+          <img loading="lazy" decoding="async"
             src="/navbar/google.png"
             alt="Google"
+            width={32}
+            height={32}
             style={{
               width: 32,
               height: 32,

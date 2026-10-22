@@ -17,24 +17,7 @@ import { PricingTeaser } from "@/components/home/PricingTeaser";
 import { POSDevicesSection } from "@/components/home/POSDevicesSection";
 import { FAQSection } from "@/components/home/FAQSection";
 import { FooterCTA } from "@/components/home/FooterCTA";
-import Head from "next/head";
 
-// import { ClosingCTA } from "@/components/home/ClosingCTA";
-
-
-<Head>
-<title></title>
-
-<meta
-  name="description"
-  content="Best Logistics ERP Software"
-/>
-
-<meta
-  name="keywords"
-  content="ERP, Logistics, Shipping"
-/>
-</Head>
 
 
 
@@ -43,23 +26,23 @@ export default function HomePage() {
     <>
       <HeroSection />
       <SocialProofBar />
-      <IndustryCardsStrip />
-      <BentoFeatures />
+      <div className="cv-auto"><IndustryCardsStrip /></div>
+      <div className="cv-auto"><BentoFeatures /></div>
       {/* <MarqueeTicker /> */}
-      <FeaturesCloud />
-      <WhyKassapos />
-      <ClientsSection />
-      <SeeInActionSection />
-      <GifShowcaseSection />
+      <div className="cv-auto"><FeaturesCloud /></div>
+      <div className="cv-auto"><WhyKassapos /></div>
+      <div className="cv-auto"><ClientsSection /></div>
+      <div className="cv-auto"><SeeInActionSection /></div>
+      <div className="cv-auto"><GifShowcaseSection /></div>
       {/* <ScrollStorySection /> */}
-      <IndustrySection />
-      <DashboardPreview />
-      <TestimonialsSection />
-      <VideoTestimonialsSection />
-      <PricingTeaser />
-      <POSDevicesSection />
-      <FAQSection />
-      <FooterCTA />
+      <div className="cv-auto"><IndustrySection /></div>
+      <div className="cv-auto"><DashboardPreview /></div>
+      <div className="cv-auto"><TestimonialsSection /></div>
+      <div className="cv-auto"><VideoTestimonialsSection /></div>
+      <div className="cv-auto"><PricingTeaser /></div>
+      <div className="cv-auto"><POSDevicesSection /></div>
+      <div className="cv-auto"><FAQSection /></div>
+      <div className="cv-auto"><FooterCTA /></div>
       {/* <ClosingCTA /> */}
     </>
   );

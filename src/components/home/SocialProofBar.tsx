@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { Users, Headphones, Smartphone, Package, Cloud } from "lucide-react";
 
 import { EASE_EXPO } from "@/lib/animations";

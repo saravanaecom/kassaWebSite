@@ -616,3 +616,69 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Below-the-fold home sections: let the browser skip layout/paint until they scroll near the viewport. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
+/* ── Light, CSS-only motion (no JS, transform/opacity only, so PageSpeed is unaffected) ── */
+@media (prefers-reduced-motion: no-preference) {
+  /* Phone icon: short "ringing" wiggle every few seconds */
+  .kp-ring { animation: kp-ring 3.2s ease-in-out infinite; transform-origin: 50% 50%; }
+  @keyframes kp-ring {
+    0%, 70%, 100% { transform: rotate(0); }
+    74% { transform: rotate(-16deg); }
+    78% { transform: rotate(14deg); }
+    82% { transform: rotate(-12deg); }
+    86% { transform: rotate(10deg); }
+    90% { transform: rotate(0); }
+  }
+
+  /* Soft expanding ring behind a circular button */
+  .kp-pulse { position: relative; }
+  .kp-pulse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 2px solid currentColor;
+    opacity: 0;
+    pointer-events: none;
+    animation: kp-pulse 2.4s ease-out infinite;
+  }
+  @keyframes kp-pulse {
+    0%   { transform: scale(1);    opacity: 0.55; }
+    100% { transform: scale(1.65); opacity: 0; }
+  }
+
+  /* Arrow nudges right on hover */
+  .kp-nudge-parent:hover .kp-nudge { transform: translateX(3px); }
+  .kp-nudge { transition: transform 0.25s ease; }
+
+  /* Hero image card gently floats */
+  .kp-float { animation: kp-float 6s ease-in-out infinite; }
+  @keyframes kp-float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+  }
+
+  /* Light sweep across a CTA button */
+  .kp-shine { position: relative; overflow: hidden; }
+  .kp-shine::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0;
+    width: 40%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,0.45), transparent);
+    transform: translateX(-150%) skewX(-20deg);
+    pointer-events: none;
+    animation: kp-shine 3.5s ease-in-out 1.5s infinite;
+  }
+  @keyframes kp-shine {
+    0%        { transform: translateX(-150%) skewX(-20deg); }
+    40%, 100% { transform: translateX(330%) skewX(-20deg); }
+  }
+}

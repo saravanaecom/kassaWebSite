@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { openDemoModal } from "@/components/ui/DemoModal";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import {
   Calendar, Shield, Lock, MessageSquare,
 } from "lucide-react";
@@ -24,7 +24,7 @@ const SLIDES = [
     alt: "Billing Software in Chennai",
     tag: "Billing Software in Chennai ",
     h1: "Smart Retail Billing",
-    h2: "Software for Every Business",
+    h2: " Software for Every Business",
     h3: "for Modern Businesses",
     sub: "Manage your retail business with KassaPOS, the leading Billing Software in Chennai. Generate GST-compliant invoices, manage inventory, track sales, print barcode bills, and monitor multiple branches from a single platform. Designed for growing retail businesses with cloud and offline support.",
     features: [
@@ -39,7 +39,7 @@ const SLIDES = [
   {
     image: "/images/hero1.webp",
     alt: "Retail Billing Software in Chennai",
-    tag: "Smart Supermarket Management in Chennai",
+    tag: "Smart Supermarket Management",
     h1: "Run Your Supermarket",
     h2: "With Total Business",
      h3: "Control",
@@ -55,8 +55,8 @@ const SLIDES = [
   },
   {
     image: "/images/hero2.webp",
-    alt: "GST Billing Software in Chennai",
-    tag: "Cloud Business Platform in Chennai",
+    alt: "GST Billing Software Chennai",
+    tag: "Cloud Business Platform",
     h1: "Access ",
     h2: "Your Business",
     h3: "Anywhere, Anytime",
@@ -72,8 +72,8 @@ const SLIDES = [
   },
   {
     image: "/images/hero3.webp",
-    alt: "POS Software in Chennai",
-    tag: "Wholesale Distribution Software in Chennai",
+    alt: "POS Software Chennai",
+    tag: "Wholesale Distribution Software",
     h1: "Complete GST Billing & ",
     h2: "Inventory Management Software",
      
@@ -89,8 +89,8 @@ const SLIDES = [
   },
   {
     image: "/images/hero4.webp",
-    alt: "Inventory Management Software in Chennai",
-    tag: "Mobile Billing App in Chennai",
+    alt: "Inventory Management Software Chennai",
+    tag: "Mobile Billing App",
     h1: "Business in Your Pocket",
     h2: "Billing at Your Fingertips",
     // h3: "for Every Business",
@@ -122,6 +122,13 @@ const contentVariants = {
 export function HeroSection() {
   const [current, setCurrent] = useState(0);
   const [paused,  setPaused]  = useState(false);
+  // Only the first slide image is needed for first paint; fetch the rest once the page has settled.
+  const [warm, setWarm] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setWarm(true), 3000);
+    return () => clearTimeout(t);
+  }, []);
 
   useEffect(() => {
     if (paused) return;
@@ -167,7 +174,7 @@ export function HeroSection() {
           <div>
             {/* Badge */}
             <AnimatePresence mode="wait" initial={false}>
-              <motion.h1 
+              <motion.div 
                 key={`tag-${current}`}
                 variants={contentVariants}
                 initial="enter" animate="center" exit="exit"
@@ -184,7 +191,7 @@ export function HeroSection() {
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
                   {slide.tag}
                 </div>
-              </motion.h1>
+              </motion.div>
             </AnimatePresence>
 
             {/* Headline */}
@@ -200,7 +207,7 @@ export function HeroSection() {
                 <span style={{ display: "block", fontSize: "clamp(1.75rem, 3.2vw, 2.65rem)", color: "#0F172A" }}>
                   {slide.h1}
                 </span>
-                <span style={{ display: "block", fontSize: "clamp(2rem, 3.8vw, 2.5rem)", color: "#2563EB" }}>
+                <span style={{ display: "block", fontSize: "clamp(2rem, 3.8vw, 3rem)", color: "#2563EB" }}>
                   {slide.h2}
                 </span>
                 <span style={{ display: "block", fontSize: "clamp(1.75rem, 3.2vw, 2.65rem)", color: "#0F172A" }}>
@@ -255,7 +262,7 @@ export function HeroSection() {
             <div className="flex flex-row gap-2 sm:gap-3 mb-5">
               <button
                 onClick={openDemoModal}
-                className="inline-flex items-center justify-center gap-1 sm:gap-1.5 font-bold rounded-xl text-white whitespace-nowrap"
+                className="kp-shine inline-flex items-center justify-center gap-1 sm:gap-1.5 font-bold rounded-xl text-white whitespace-nowrap"
                 style={{
                   background: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)",
                   boxShadow: "0 6px 20px rgba(245,158,11,0.38)",
@@ -322,6 +329,7 @@ export function HeroSection() {
           >
             {/* Card */}
             <div
+              className="kp-float"
               style={{
                 position: "relative",
                 width: "100%",
@@ -334,7 +342,7 @@ export function HeroSection() {
               }}
             >
               {/* Slide images */}
-              {SLIDES.map((s, i) => (
+              {SLIDES.map((s, i) => (i === 0 || warm || i === current) && (
                 <Image
                   key={s.image}
                   src={s.image}
@@ -420,29 +428,43 @@ export function HeroSection() {
               >
                 <span style={{ fontSize: "1.1rem" }}>📍</span>
                 <div>
-                  <p style={{ fontSize: "0.78rem", fontWeight: 800, color: "#16A34A", lineHeight: 1.2, margin: 0 }}>Chennai</p>
+                  <p style={{ fontSize: "0.78rem", fontWeight: 800, color: "#15803D", lineHeight: 1.2, margin: 0 }}>Chennai</p>
                   <p style={{ fontSize: "0.65rem", color: "#64748B", margin: 0 }}>Local Support</p>
                 </div>
               </div>
             </div>
 
             {/* Dot indicators */}
-            <div className="flex items-center gap-2" style={{ marginTop: 12 }}>
+            <div className="flex items-center" style={{ marginTop: 6 }}>
               {SLIDES.map((_, i) => (
                 <button
                   key={i}
+                  aria-label={`Show slide ${i + 1}`}
+                  aria-current={i === current}
                   onClick={() => { setCurrent(i); setPaused(true); setTimeout(() => setPaused(false), 6000); }}
                   style={{
-                    width: i === current ? 28 : 8,
-                    height: 8,
-                    borderRadius: 99,
-                    background: i === current ? "#2563EB" : "#CBD5E1",
+                    minWidth: 24,
+                    height: 24,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    background: "none",
                     border: "none",
                     cursor: "pointer",
-                    transition: "all 0.3s ease",
                     padding: 0,
                   }}
-                />
+                >
+                  <span
+                    style={{
+                      display: "block",
+                      width: i === current ? 28 : 8,
+                      height: 8,
+                      borderRadius: 99,
+                      background: i === current ? "#2563EB" : "#94A3B8",
+                      transition: "all 0.3s ease",
+                    }}
+                  />
+                </button>
               ))}
             </div>
           </div>

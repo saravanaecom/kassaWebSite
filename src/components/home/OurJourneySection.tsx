@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { m as motion, useInView } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const SPRING = [0.22, 1, 0.36, 1] as const;

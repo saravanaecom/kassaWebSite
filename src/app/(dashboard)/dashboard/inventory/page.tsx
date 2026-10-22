@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { Search, Plus, AlertCircle, Package, ArrowUpDown, Filter, Download, Edit2 } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
 

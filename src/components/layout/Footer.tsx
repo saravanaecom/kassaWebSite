@@ -40,42 +40,14 @@ const SvgLinkedin = () => (
 );
 
 const FOOTER_PRODUCTS = [
-  {
-    label: "Supermarket Billing Software in Chennai",
-    href: "/products/supermarket-billing-software-in-Chennai",
-  },
-  {
-    label: "Retail Billing Software in Chennai",
-    href: "/products/retail-billing-software-in-Chennai",
-  },
-  {
-    label: "Online Billing Software in Chennai",
-    href: "/products/online-billing-software-in-Chennai",
-  },
-  {
-    label: "Cloud Billing Software in Chennai",
-    href: "/products/cloud-billing-software-in-Chennai",
-  },
-  {
-    label: "Textiles & Garments Billing Software in Chennai",
-    href: "/products/textile-billing-software-in-Chennai",
-  },
-  {
-    label: "Warehouse Inventory Management System Software",
-    href: "/products/warehouse-inventory-management-system-software-in-Chennai",
-  },
-  {
-    label: "GST Billing Software in Chennai",
-    href: "/products/gst-billing-software-in-Chennai",
-  },
-  {
-    label: "Best Billing Software in Chennai",
-    href: "/best-billing-software-in-chennai",
-  },
-  {
-    label: "All Products →",
-    href: "/products",
-  },
+  { label: "Supermarket POS", href: "/products/supermarket-billing-software-in-chennai" },
+  { label: "Retail Billing", href: "/products/retail-billing-software-in-chennai" },
+  { label: "Restaurant POS", href: "/products/restaurant-pos-software-in-chennai" },
+  { label: "Cloud Billing", href: "/products/cloud-billing-software-in-chennai" },
+  { label: "Textiles Software", href: "/products/textile-billing-software-in-chennai" },
+  { label: "Warehouse Management", href: "/products/warehouse-inventory-management-system-software-in-chennai" },
+  { label: "GST Billing", href: "/products/gst-billing-software-in-chennai" },
+  { label: "All Products →", href: "/products" },
 ];
 
 const FOOTER_COMPANY = [
@@ -176,7 +148,7 @@ export function Footer() {
                 }}
               >
                 <Image
-                  src="/images/logo.webp"
+                  src="/images/logo.jpg"
                   alt="Kassapos"
                   width={220}
                   height={56}

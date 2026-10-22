@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { ShoppingCart, Phone } from "lucide-react";
 import { EASE_EXPO } from "@/lib/animations";
 import { openDemoModal } from "../ui/DemoModal";
@@ -166,7 +166,7 @@ export function POSDevicesSection() {
     minHeight: 250,
   }}
 >
-  <img
+  <img loading="lazy" decoding="async"
     src={device.image}
     alt={device.name}
     className="transition-transform duration-500 ease-out group-hover:scale-110  bg-transparent"

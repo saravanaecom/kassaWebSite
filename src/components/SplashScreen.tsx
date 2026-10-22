@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { BarChart3, Package, Users, FileText } from "lucide-react";
 
@@ -69,7 +69,7 @@ export function SplashScreen() {
                 className="mb-1"
               >
                 <Image
-                  src="/images/logo.webp"
+                  src="/images/logo.jpg"
                   alt="KassaPOS"
                   width={340}
                   height={136}

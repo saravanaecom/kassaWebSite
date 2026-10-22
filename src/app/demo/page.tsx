@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m as motion, AnimatePresence } from "framer-motion";
 import { Phone, MessageCircle, CheckCircle, Calendar, Clock, ArrowRight, Star, Play, X } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ScrollReveal, StaggerReveal, StaggerItem } from "@/components/ui/ScrollReveal";
